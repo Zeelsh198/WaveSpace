@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+* {
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+
+}
+
+html {
+  overflow-x: hidden;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.stroke-text {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  text-shadow: 0 0 7px #fff;
+}
