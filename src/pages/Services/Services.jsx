@@ -28,7 +28,7 @@ const Services = () => {
       <div className="bg-[#0c005b] w-full py-16 sm:py-20 sm:pb-40">
         <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row justify-between items-center px-4 sm:px-6 lg:px-8 gap-20">
           {/* LEFT SECTION */}
-          <div className="w-full lg:w-1/2 flex flex-col gap-6">
+          <section className="w-full lg:w-1/2 flex flex-col gap-6">
             <RatingBadge
               text="Clutch"
               rating={5}
@@ -76,31 +76,32 @@ const Services = () => {
                 />
               </div>
             </div>
-          </div>
+          </section>
 
           {/* RIGHT IMAGE - hidden on small screens */}
-          <div className="w-full lg:w-1/2 hidden lg:flex justify-center">
+          <section className="w-full lg:w-1/2 hidden lg:flex justify-center">
             <img
               src={servicesHeaderImg}
               alt="services"
               className="w-full max-w-[700px] object-contain"
             />
-          </div>
+          </section>
         </div>
       </div>
 
-      <div className="max-w-[1440px] bg-white mx-auto  px-4 sm:px-6 lg:px-8 gap-10">
+      <section className="max-w-[1440px] bg-white mx-auto  px-4 sm:px-6 lg:px-8 gap-10">
         <LogoMarquee
           scrollspeed={25}
           backgroundColor="#f5f5f5"
           padding="1rem sm:1.5rem"
         />
-      </div>
-
-      {serviceDetails.map((service, index) => (
-        <ServiceDetails key={index} {...service} />
-      ))}
-      <div className="max-w-[1440px]  mx-auto px-4 sm:px-6 md:px-8 flex flex-col  md:flex-row items-start lg:items-end justify-between gap-6 md:gap-0 pt-25 ">
+      </section>
+      <section>
+        {serviceDetails.map((service, index) => (
+          <ServiceDetails key={index} {...service} />
+        ))}
+      </section>
+      <section className="max-w-[1440px]  mx-auto px-4 sm:px-6 md:px-8 flex flex-col  md:flex-row items-start lg:items-end justify-between gap-6 md:gap-0 pt-25 ">
         <div>
           {" "}
           <ScrollColorShiftText
@@ -129,8 +130,8 @@ const Services = () => {
             label="Choose a plan"
           />
         </div>
-      </div>
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10">
+      </section>
+      <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10">
         {hoverCardDetails.map((card, index) => (
           <div
             key={index}
@@ -145,9 +146,9 @@ const Services = () => {
             <HoverCardDetails {...card} />
           </div>
         ))}
-      </div>
+      </section>
 
-      <div className="bg-gray-200 py-15">
+      <section className="bg-gray-200 py-15">
         <div className="max-w-[1440px]  mx-auto px-4 sm:px-6 md:px-8 flex flex-col  md:flex-row items-start lg:items-end justify-between gap-6 md:gap-0 ">
           <div>
             {" "}
@@ -184,9 +185,9 @@ const Services = () => {
             <InfoCard key={index} {...card} />
           ))}
         </div>
-      </div>
+      </section>
 
-      <div className="w-full bg-[#5d9ab6] py-20">
+      <section className="w-full bg-[#5d9ab6] py-20">
         <ScrollRevealLines
           line1Class="text-white"
           line2Class="text-white"
@@ -213,8 +214,8 @@ const Services = () => {
             <StatCard key={card.index} {...card} />
           ))}
         </div>
-      </div>
-      <div className="bg-gray-200 py-30">
+      </section>
+      <section className="bg-gray-200 py-30">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8  text-center">
           <ScrollColorShiftText
             text="Find your best design into us."
@@ -234,23 +235,10 @@ const Services = () => {
           />
         </div>
         <TestimonialsSection />
-      </div>
-      <div className="w-full  sm:px-6">
+      </section>
+      <section className="w-full  sm:px-6">
         <div
-          className="
-      bg-[#0c005b] 
-      w-full max-w-[1440px] 
-      mx-auto 
-      px-4 sm:px-6 md:px-12 lg:px-20 
-      py-16 
-      rounded-none sm:rounded-[28px] 
-      mt-[60px] md:mt-[100px] 
-      mb-[80px] md:mb-[120px] 
-      text-white 
-      font-inter 
-      relative 
-      overflow-hidden
-    "
+          className="bg-[#0c005b] w-full max-w-[1440px] mx-auto px-4 sm:px-6 md:px-12 lg:px-20 py-16 rounded-none sm:rounded-[28px] mt-[60px] md:mt-[100px] mb-[80px] md:mb-[120px] text-white font-inter relative overflow-hidden"
         >
           {/* 🔥 Top Badge */}
           <div className="inline-block bg-[#150973] text-white text-[14px] leading-[20px] px-4 py-1 rounded-full mb-8 border border-white border-opacity-20">
@@ -296,7 +284,7 @@ const Services = () => {
             />
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

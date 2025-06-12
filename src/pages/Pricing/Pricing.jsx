@@ -35,7 +35,7 @@ import { hoverPreviewListData } from "../../utils/caseStudiesDummyData";
 const Pricing = () => {
   return (
     <>
-      <div className="bg-[#101010] flex flex-col items-center justify-center text-center px-4 py-20">
+      <section className="bg-[#101010] flex flex-col items-center justify-center text-center px-4 py-20">
         <RatingBadge text="Clutch" rating={5} borderColor="border-gray-700" />
 
         <div className="mt-6">
@@ -87,43 +87,44 @@ const Pricing = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 font">
+      <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 font">
         <LogoMarquee
           scrollspeed={25}
           backgroundColor="#f5f5f5"
           padding="1rem sm:1.5rem"
         />
-      </div>
-
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 my-20 text-center">
-        <ScrollColorShiftText
-          text="Our comprehensive services for"
-          fromColor="#29242469"
-          toColor="black"
-          className="text-left"
-          fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
-          fontWeight="font-extrabold"
-        />
-        <ScrollColorShiftText
-          text="Global businesses"
-          fromColor="#ffffffbf"
-          toColor="#29242469"
-          className="text-left"
-          fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
-          fontWeight="font-extrabold"
-        />
-      </div>
-
-      <div className="relative bg-gray-200">
-        {brandingAdsData.map((ad, index) => (
-          <AnimatedAdSection zIndex={index} key={index}>
-            <BrandingAds {...ad} />
-          </AnimatedAdSection>
-        ))}
-      </div>
-      <div className="bg-gray-200">
+      </section>
+      <section>
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 my-20 text-center">
+          <ScrollColorShiftText
+            text="Our comprehensive services for"
+            fromColor="#29242469"
+            toColor="black"
+            className="text-left"
+            fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
+            fontWeight="font-extrabold"
+          />
+          <ScrollColorShiftText
+            text="Global businesses"
+            fromColor="#ffffffbf"
+            toColor="#29242469"
+            className="text-left"
+            fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
+            fontWeight="font-extrabold"
+          />
+        </div>
+      </section>
+      <section>
+        <div className="relative bg-gray-200">
+          {brandingAdsData.map((ad, index) => (
+            <AnimatedAdSection zIndex={index} key={index}>
+              <BrandingAds {...ad} />
+            </AnimatedAdSection>
+          ))}
+        </div></section>
+      <section className="bg-gray-200">
         <div className="max-w-[1440px]  mx-auto px-4 sm:px-6 md:px-8 flex flex-col  md:flex-row items-start lg:items-center justify-between gap-6 md:gap-0 pt-25 ">
           <div>
             {" "}
@@ -154,8 +155,8 @@ const Pricing = () => {
             />
           </div>
         </div>
-      </div>
-      <div className="bg-gray-200 space-y-10 py-30">
+      </section>
+      <section className="bg-gray-200 space-y-10 py-30">
         {/* Top Benefit Row */}
         <div className="max-w-[1440px] mx-auto flex flex-wrap gap-4 px-4 sm:px-6 lg:px-8">
           {benefitsCards.slice(0, 3).map((card, index) => (
@@ -183,8 +184,8 @@ const Pricing = () => {
             image={testimonialData.testimonialImage}
           />
         </div>
-      </div>
-      <div className="py-35">
+      </section>
+      <section className="py-35">
         <ImageMarquee
           imageClass={"rounded-xl"}
           images={imageMarqueeData3}
@@ -209,8 +210,8 @@ const Pricing = () => {
           width="w-120"
           direction="left" // or "left"
         />
-      </div>
-      <div className="bg-gray-200 text-white py-20">
+      </section>
+      <section className="bg-gray-200 text-white py-20">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 flex flex-col  md:flex-row items-start lg:items-center justify-between gap-6 md:gap-0 pt-20 ">
           <div>
             {" "}
@@ -242,28 +243,28 @@ const Pricing = () => {
           </div>
         </div>
         <HoverPreviewList list={hoverPreviewListData} heading="What We Offer" />
-      </div>
+      </section>
+      <section>
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-20  text-center">
+          <ScrollColorShiftText
+            text="Find your best design into us."
+            fromColor="#29242469"
+            toColor="black"
+            className="text-left"
+            fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
+            fontWeight="font-extrabold"
+          />
+          <ScrollColorShiftText
+            text="We guarantee next success is yours!"
+            fromColor="#ffffffbf"
+            toColor="#29242469 "
+            className="text-left"
+            fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
+            fontWeight="font-extrabold"
+          />
+        </div></section>
 
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8  text-center">
-        <ScrollColorShiftText
-          text="Find your best design into us."
-          fromColor="#29242469"
-          toColor="black"
-          className="text-left"
-          fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
-          fontWeight="font-extrabold"
-        />
-        <ScrollColorShiftText
-          text="We guarantee next success is yours!"
-          fromColor="#ffffffbf"
-          toColor="#29242469 "
-          className="text-left"
-          fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
-          fontWeight="font-extrabold"
-        />
-      </div>
-
-      <div className="w-full bg-[#5d9ab6] py-20">
+      <section className="w-full bg-[#5d9ab6] py-20">
         <ScrollRevealLines
           line1Class="text-white"
           line2Class="text-white"
@@ -274,7 +275,7 @@ const Pricing = () => {
 
         {/* ImageMarquee visible on mobile & tablet only (hidden on lg and above) */}
         {/* Visible on mobile & tablet only */}
-        <div className="block lg:hidden">
+        <section className="block lg:hidden">
           <ImageMarquee
             scrollSpeed={100}
             images={imageMarqueeData1}
@@ -282,7 +283,7 @@ const Pricing = () => {
             width=" sm:w-[200px] md:w-[300px]"
             gap="mx-0"
           />
-        </div>
+        </section>
 
         {/* StatCards visible on laptop and above only (hidden on sm & md) */}
         <div className="hidden lg:flex max-w-7xl mx-auto flex-wrap justify-center">
@@ -290,9 +291,9 @@ const Pricing = () => {
             <StatCard key={card.index} {...card} />
           ))}
         </div>
-      </div>
+      </section>
 
-      <div className="bg-gray-200 py-30">
+      <section className="bg-gray-200 py-30">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8  text-center">
           <ScrollColorShiftText
             text="Find your best design into us."
@@ -312,9 +313,9 @@ const Pricing = () => {
           />
         </div>
         <TestimonialsSection />
-      </div>
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-        <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold py-6">
+      </section>
+      <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold py-10">
           Frequently asked{" "}
         </p>
         <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
@@ -332,9 +333,9 @@ const Pricing = () => {
             <AskQuesTestimonial />
           </div>
         </div>
-      </div>
+      </section>
 
-      
+
     </>
   );
 };

@@ -39,7 +39,7 @@ import {
 const Home = () => {
   return (
     <>
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 my-20">
+      <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 my-20">
         <div className="flex flex-col lg:flex-row justify-between">
           <div>
             <RotatingText
@@ -110,8 +110,9 @@ const Home = () => {
             padding="1rem sm:1.5rem"
           />
         </div>
-      </div>
-      <BgVideo cursorText="Play" bgColor="#fffc1a" color="black" />
+        <BgVideo cursorText="Play" bgColor="#fffc1a" color="black" />
+      </section>
+
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 my-20 text-left">
         <ScrollColorShiftText
           text="500+ Founders trusted us. Get return  on"
@@ -131,62 +132,64 @@ const Home = () => {
           fontWeight="font-extrabold"
         />
       </div>
-      <div className="w-full ">
-        <div className="max-w-[1440px] mx-auto flex flex-wrap justify-center gap-20 ">
-          {testimonialCards.map((card, index) => (
-            <TestimonialCard key={index} {...card} />
-          ))}
-        </div>
-      </div>
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 mt-60 text-center">
-        <ScrollColorShiftText
-          text="Turn your ideas into impactful"
-          fromColor="#29242469"
-          toColor="black"
-          className="text-left"
-          fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
-          fontWeight="font-extrabold"
-        />
-        <ScrollColorShiftText
-          text="solutions like them!"
-          fromColor="#ffffffbf"
-          toColor="#29242469"
-          className="text-left"
-          fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
-          fontWeight="font-extrabold"
-        />
-      </div>
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 mt-10 space-y-10">
-        {/* Top 2 Ads Side by Side on Large Screens, Stack on Mobile */}
-        <div className="flex flex-col lg:flex-row ">
-          <AdWithPhoto {...adWithPhotoData[0]} />
-          <AdWithPhoto {...adWithPhotoData[1]} />
-        </div>
-
-        {/* Testimonial Highlight (centered) */}
-        <div className="flex justify-left">
-          <TestimonialHighlightCard {...testimonialHighlightCardData} />
-        </div>
-
-        <div className="w-full flex justify-end my-30">
-          <div className="flex flex-col items-end gap-12 max-w-5xl w-full ">
-            <AdWithPhoto {...adWithPhotoData[2]} />
-            <TestimonialHighlightCard {...testimonialHighlightCardData} />
+      <section>
+        <div className="w-full ">
+          <div className="max-w-[1440px] mx-auto flex flex-wrap justify-center gap-20 ">
+            {testimonialCards.map((card, index) => (
+              <TestimonialCard key={index} {...card} />
+            ))}
           </div>
         </div>
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 mt-60 text-center">
+          <ScrollColorShiftText
+            text="Turn your ideas into impactful"
+            fromColor="#29242469"
+            toColor="black"
+            className="text-left"
+            fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
+            fontWeight="font-extrabold"
+          />
+          <ScrollColorShiftText
+            text="solutions like them!"
+            fromColor="#ffffffbf"
+            toColor="#29242469"
+            className="text-left"
+            fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
+            fontWeight="font-extrabold"
+          />
+        </div>
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 mt-10 space-y-10">
+          {/* Top 2 Ads Side by Side on Large Screens, Stack on Mobile */}
+          <div className="flex flex-col lg:flex-row ">
+            <AdWithPhoto {...adWithPhotoData[0]} />
+            <AdWithPhoto {...adWithPhotoData[1]} />
+          </div>
 
-        <div className="w-full flex">
-          <div className="flex flex-col lg:flex-row items-end gap-10 w-full">
-            <AdWithPhoto {...adWithPhotoData[3]} />
+          {/* Testimonial Highlight (centered) */}
+          <div className="flex justify-left">
             <TestimonialHighlightCard {...testimonialHighlightCardData} />
           </div>
-        </div>
 
-        <div className="w-full flex justify-end my-30 ">
-          <AdWithPhoto {...adWithPhotoData[4]} />
+          <div className="w-full flex justify-end my-30">
+            <div className="flex flex-col items-end gap-12 max-w-5xl w-full ">
+              <AdWithPhoto {...adWithPhotoData[2]} />
+              <TestimonialHighlightCard {...testimonialHighlightCardData} />
+            </div>
+          </div>
+
+          <div className="w-full flex">
+            <div className="flex flex-col lg:flex-row items-end gap-10 w-full">
+              <AdWithPhoto {...adWithPhotoData[3]} />
+              <TestimonialHighlightCard {...testimonialHighlightCardData} />
+            </div>
+          </div>
+
+          <div className="w-full flex justify-end my-30 ">
+            <AdWithPhoto {...adWithPhotoData[4]} />
+          </div>
         </div>
-      </div>
-      <div className="bg-black text-white py-30">
+      </section>
+      <section className="bg-black text-white py-30">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           {/* Top Heading */}
           <div className="mt-16">
@@ -237,8 +240,7 @@ const Home = () => {
           <div className="mt-40">
             <div className="flex flex-col lg:items-start text-center lg:text-left">
               <ScrollColorShiftText
-                text="From startup to , grow your business
-"
+                text="From startup to , grow your business"
                 fromColor="#dadada "
                 toColor="#ffffff"
                 className="text-left"
@@ -256,7 +258,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <div className="relative">
         {brandingAdsData.map((ad, index) => (
           <AnimatedAdSection zIndex={index} key={index}>
@@ -284,7 +286,7 @@ const Home = () => {
         />
       </div>
 
-      <div className="w-full bg-[#5d9ab6] py-20">
+      <section className="w-full bg-[#5d9ab6] py-20">
         <ScrollRevealLines
           line1Class="text-white"
           line2Class="text-white"
@@ -311,8 +313,8 @@ const Home = () => {
             <StatCard key={card.index} {...card} />
           ))}
         </div>
-      </div>
-      <div className="bg-gray-200 py-30">
+      </section>
+      <section className="bg-gray-200 py-30">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8  text-center">
           <ScrollColorShiftText
             text="Find your best design into us."
@@ -332,8 +334,8 @@ const Home = () => {
           />
         </div>
         <TestimonialsSection />
-      </div>
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 flex flex-col  md:flex-row items-start lg:items-center justify-between gap-6 md:gap-0 py-10">
+      </section>
+      <section className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 flex flex-col  md:flex-row items-start lg:items-center justify-between gap-6 md:gap-0 py-10">
         <div>
           {" "}
           <ScrollColorShiftText
@@ -361,15 +363,17 @@ const Home = () => {
             label="Start Designing"
           />
         </div>
-      </div>
-      <ImageMarquee
-        scrollSpeed={100}
-        width="w-[250px]"
-        height="h-[350px]"
-        gap="mx-1"
-        images={imageMarqueeData2}
-      />
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+      </section>
+      <section>
+        <ImageMarquee
+          scrollSpeed={100}
+          width="w-[250px]"
+          height="h-[350px]"
+          gap="mx-1"
+          images={imageMarqueeData2}
+        />
+      </section>
+      <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold py-6">
           Frequently asked{" "}
         </p>
@@ -388,9 +392,9 @@ const Home = () => {
             <AskQuesTestimonial />
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 flex flex-col  md:flex-row items-start lg:items-center justify-between gap-6 md:gap-0 py-10">
+      <section className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 flex flex-col  md:flex-row items-start lg:items-center justify-between gap-6 md:gap-0 py-10">
         <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-6xl font-bold leading-tight">
           Got a project in mind? <br className="hidden lg:block" /> Let’s talk.
         </h2>
@@ -402,7 +406,7 @@ const Home = () => {
             label="Book a call"
           />
         </div>
-      </div>
+      </section>
 
       <ContactInfoSection />
       {/* <Footer /> */}

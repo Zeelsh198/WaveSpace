@@ -18,31 +18,33 @@ import { steps, stepListTestimonial } from "../../utils/homeDummyData";
 const CaseStudies = () => {
   return (
     <>
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8  text-center my-15">
-        <ScrollColorShiftText
-          text="Turn your ideas into impactful"
-          fromColor="#29242469"
-          toColor="black"
-          className="text-left"
-          fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
-          fontWeight="font-bold"
-        />
+      <section>
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8  text-center my-15">
+          <ScrollColorShiftText
+            text="Turn your ideas into impactful"
+            fromColor="#29242469"
+            toColor="black"
+            className="text-left"
+            fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
+            fontWeight="font-bold"
+          />
 
-        <ScrollColorShiftText
-          text="solutions like them!"
-          fromColor="#ffffffbf"
-          toColor="#29242469"
-          className="text-left"
-          fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
-          fontWeight="font-bold"
-        />
-      </div>
-      <div className="max-w-[1440px] mx-auto grid grid-cols-1 sm:grid-cols-2 px-4 sm:px-6 lg:px-8 gap-6  py-10">
+          <ScrollColorShiftText
+            text="solutions like them!"
+            fromColor="#ffffffbf"
+            toColor="#29242469"
+            className="text-left"
+            fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
+            fontWeight="font-bold"
+          />
+        </div>
+      </section>
+      <section className="max-w-[1440px] mx-auto grid grid-cols-1 sm:grid-cols-2 px-4 sm:px-6 lg:px-8 gap-6  py-10">
         {adWithPhotoData2.map((ad, index) => (
           <AdWithPhoto2 key={index} {...ad} />
         ))}
-      </div>
-      <div className="bg-black text-white py-30">
+      </section>
+      <section className="bg-black text-white py-30">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           {/* Top Heading */}
           <div className="mt-16">
@@ -89,8 +91,8 @@ const CaseStudies = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="bg-gray-200 text-white pt-40">
+      </section>
+      <section className="bg-gray-200 text-white pt-40">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8  text-center ">
           <ScrollColorShiftText
             text="Find your best design into us."
@@ -142,7 +144,7 @@ const CaseStudies = () => {
           </div>
         </div>
         <HoverPreviewList list={hoverPreviewListData} heading="What We Offer" />
-      </div>
+      </section>
     </>
   );
 };

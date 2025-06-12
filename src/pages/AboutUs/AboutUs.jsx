@@ -75,7 +75,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 flex flex-col  md:flex-row items-start lg:items-center justify-between gap-6 md:gap-0 py-20">
+      <section className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 flex flex-col  md:flex-row items-start lg:items-center justify-between gap-6 md:gap-0 py-20">
         <div>
           {" "}
           <ScrollColorShiftText
@@ -103,15 +103,17 @@ const AboutUs = () => {
             label="Start Designing"
           />
         </div>
-      </div>
-      <ImageMarquee
-        scrollSpeed={300}
-        width="w-[300px] pb-20"
-        height="h-[450px]"
-        gap="mx-1"
-        images={imageMarqueeData2}
-      />
-      <div className="w-full bg-[#5d9ab6] py-20">
+      </section>
+      <section>
+        <ImageMarquee
+          scrollSpeed={300}
+          width="w-[300px] pb-20"
+          height="h-[450px]"
+          gap="mx-1"
+          images={imageMarqueeData2}
+        />
+      </section>
+      <section className="w-full bg-[#5d9ab6] py-20">
         <ScrollRevealLines
           line1Class="text-white"
           line2Class="text-white"
@@ -122,7 +124,7 @@ const AboutUs = () => {
 
         {/* ImageMarquee visible on mobile & tablet only (hidden on lg and above) */}
         {/* Visible on mobile & tablet only */}
-        <div className="block lg:hidden">
+        <section className="block lg:hidden">
           <ImageMarquee
             scrollSpeed={100}
             images={imageMarqueeData1}
@@ -130,7 +132,7 @@ const AboutUs = () => {
             width=" sm:w-[200px] md:w-[300px]"
             gap="mx-0"
           />
-        </div>
+        </section>
 
         {/* StatCards visible on laptop and above only (hidden on sm & md) */}
         <div className="hidden lg:flex max-w-7xl mx-auto flex-wrap justify-center">
@@ -138,48 +140,50 @@ const AboutUs = () => {
             <StatCard key={card.index} {...card} />
           ))}
         </div>
-      </div>
-      <div className="relative">
-        {/* Sticky Title */}
-        <div className="bg-[#1b1b1b] sticky top-0 z-[10]">
-          <TextBox
-            text={"Why wavespace"}
-            classes="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 text-3xl md:text-6xl text-white pt-20 "
+      </section>
+      <section>
+        <div className="relative">
+          {/* Sticky Title */}
+          <div className="bg-[#1b1b1b] sticky top-0 z-[10]">
+            <TextBox
+              text={"Why wavespace"}
+              classes="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 text-3xl md:text-6xl text-white pt-20 "
+            />
+          </div>
+
+          {/* Animated Sections */}
+          <div className="bg-[#1b1b1b] relative py-30">
+            {contentImageBlocks.map((block, index) => (
+              <AnimatedAdSection key={index} top="top-60" zIndex={index}>
+                <ContentImageBlock {...block} />
+              </AnimatedAdSection>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 pt-30 pb-10 text-center">
+          <ScrollColorShiftText
+            text="Make some noise for our talented"
+            fromColor="#29242469"
+            toColor="black"
+            className="text-left"
+            fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
+            fontWeight="font-extrabold"
+          />
+          <ScrollColorShiftText
+            text="coders, and strategists!"
+            fromColor="#ffffffbf"
+            toColor="#29242469 "
+            className="text-left"
+            fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
+            fontWeight="font-extrabold"
           />
         </div>
 
-        {/* Animated Sections */}
-        <div className="bg-[#1b1b1b] relative py-30">
-          {contentImageBlocks.map((block, index) => (
-            <AnimatedAdSection key={index} top="top-60" zIndex={index}>
-              <ContentImageBlock {...block} />
-            </AnimatedAdSection>
-          ))}
-        </div>
-      </div>
-
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 pt-30 pb-10 text-center">
-        <ScrollColorShiftText
-          text="Make some noise for our talented"
-          fromColor="#29242469"
-          toColor="black"
-          className="text-left"
-          fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
-          fontWeight="font-extrabold"
-        />
-        <ScrollColorShiftText
-          text="coders, and strategists!"
-          fromColor="#ffffffbf"
-          toColor="#29242469 "
-          className="text-left"
-          fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
-          fontWeight="font-extrabold"
-        />
-      </div>
-
-      <TeamScroller teamMembers={teamMembers} />
-
-      <div className="bg-gray-200 pt-30">
+        <TeamScroller teamMembers={teamMembers} />
+      </section>
+      <section className="bg-gray-200 pt-30">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8  text-center">
           <ScrollColorShiftText
             text="Find your best design into us."
@@ -200,7 +204,7 @@ const AboutUs = () => {
         </div>
         <TestimonialsSection />
 
-      </div>
+      </section>
 
 
 
