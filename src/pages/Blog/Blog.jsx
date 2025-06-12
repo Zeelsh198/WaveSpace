@@ -17,8 +17,6 @@ const Blog = () => {
 
       <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <BlogCard layout="horizontal" {...blogDummyData[5]} />
-
-
       </section>
 
       <section className="max-w-[1380px] mx-auto px-4 sm:px-6 lg:px-8 bg-gray-200 p-[0.5px] my-15" />

@@ -22,14 +22,14 @@ const ContactForm = () => {
         <select
           className="w-full sm:w-1/2 p-3 border border-gray-300  text-gray-500 text-base focus:outline-none appearance-none bg-white bg-[url('data:image/svg+xml;charset=UTF-8,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%236b7280%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27%3e%3cpolyline points=%276 9 12 15 18 9%27%3e%3c/polyline%3e%3c/svg%3e')] bg-no-repeat bg-[right_12px_center] bg-[length:16px]"
         >
-          <option value="" disabled selected>
+          <option value="" disabled >
             Project budget
           </option>
         </select>
         <select
           className="w-full sm:w-1/2 p-3 border border-gray-300  text-gray-500 text-base focus:outline-none appearance-none bg-white bg-[url('data:image/svg+xml;charset=UTF-8,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%236b7280%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27%3e%3cpolyline points=%276 9 12 15 18 9%27%3e%3c/polyline%3e%3c/svg%3e')] bg-no-repeat bg-[right_12px_center] bg-[length:16px]"
         >
-          <option value="" disabled selected>
+          <option value="" disabled >
             How did you hear about us?
           </option>
         </select>
