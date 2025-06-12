@@ -1,27 +1,23 @@
 import React from "react";
 import TextBox from "../../components/TextBox/TextBox";
 import aboutUs from "./AboutUsAssets/aboutus.webp";
-import logo1 from "../../components/TrustedBy/companyAssets/logo1.webp";
-import logo2 from "../../components/TrustedBy/companyAssets/logo2.webp";
-import logo3 from "../../components/TrustedBy/companyAssets/logo3.webp";
 import ScrollColorShiftText from "../../components/ScrollColorShiftText/ScrollColorShiftText";
 import ImageMarquee from "../../components/TrustedBy/ImageMarquee";
 import ButtonArrow from "../../components/Button/ButtonArrow";
-import s1 from "../../components/TrustedBy/companyAssets/s1.webp";
-import s2 from "../../components/TrustedBy/companyAssets/s2.webp";
-import s3 from "../../components/TrustedBy/companyAssets/s3.webp";
 import ScrollRevealLines from "../../components/ScrollColorShiftText/ScrollRevealLines";
 import StatCard from "../../components/StatusCard/StatCard";
 import ContactForm from "../../Form/ContactForm";
 import UserProfileCard from "../../components/UserProfileCard/UserProfileCard";
 import TestimonialsSection from "../../components/TestimonialsSection/TestimonialsSection";
 import ContentImageBlock from "../../components/ContentImageBlock/ContentImageBlock";
-import teamImage1 from "../../components/ContentImageBlock/ContentImageBlockAssets/teamImage1.webp";
-import teamImage2 from "../../components/ContentImageBlock/ContentImageBlockAssets/teamImage2.webp";
-import teamImage3 from "../../components/ContentImageBlock/ContentImageBlockAssets/teamImage3.webp";
 import AnimatedAdSection from "../../components/AnimatedWrapper/AnimatedAdSection";
 import TeamScroller from "../../components/TeamScroller/TeamScroller";
 import HaveAProject from "../../components/HaveAProject/HaveAProject";
+import {
+  contentImageBlocks,
+  teamMembers,
+} from "../../utils/aboutUsDummyData";
+import { imageMarqueeData2, imageMarqueeData1, statCardsData } from "../../utils/homeDummyData";
 
 const AboutUs = () => {
   return (
@@ -113,40 +109,7 @@ const AboutUs = () => {
         width="w-[300px] pb-20"
         height="h-[450px]"
         gap="mx-1"
-        images={[
-          logo1,
-          logo2,
-          logo3,
-          logo1,
-          logo2,
-          logo3,
-          logo1,
-          logo2,
-          logo3,
-          logo1,
-          logo2,
-          logo3,
-          logo1,
-          logo2,
-          logo3,
-          logo1,
-          logo2,
-          logo3,
-          logo1,
-          logo2,
-          logo3,
-          logo1,
-          logo2,
-          logo3,
-          logo1,
-          logo2,
-          logo3,
-          logo1,
-          logo2,
-          logo3,
-          logo1,
-          logo2,
-        ]}
+        images={imageMarqueeData2}
       />
       <div className="w-full bg-[#5d9ab6] py-20">
         <ScrollRevealLines
@@ -162,48 +125,7 @@ const AboutUs = () => {
         <div className="block lg:hidden">
           <ImageMarquee
             scrollSpeed={100}
-            images={[
-              s1,
-              s2,
-              s3,
-              s1,
-              s2,
-              s3,
-              s1,
-              s2,
-              s3,
-              s1,
-              s2,
-              s3,
-              s1,
-              s2,
-              s3,
-              s1,
-              s2,
-              s3,
-              s1,
-              s2,
-              s3,
-              s1,
-              s2,
-              s3,
-              s1,
-              s2,
-              s3,
-              s1,
-              s2,
-              s3,
-              s1,
-              s2,
-              s3,
-              s1,
-              s2,
-              s3,
-              s1,
-              s2,
-              s3,
-              s1,
-            ]}
+            images={imageMarqueeData1}
             height=" sm:h-[200px] md:h-[300px]"
             width=" sm:w-[200px] md:w-[300px]"
             gap="mx-0"
@@ -212,10 +134,9 @@ const AboutUs = () => {
 
         {/* StatCards visible on laptop and above only (hidden on sm & md) */}
         <div className="hidden lg:flex max-w-7xl mx-auto flex-wrap justify-center">
-          <StatCard index={1} line1="500+ Happy" line2="clients" />
-          <StatCard index={2} line1="10+ Design" line2="awards" />
-          <StatCard index={3} line1="$600 M+" line2="funding" />
-          <StatCard index={4} line1="x5 Growth of" line2="brand" />
+          {statCardsData.map((card) => (
+            <StatCard key={card.index} {...card} />
+          ))}
         </div>
       </div>
       <div className="relative">
@@ -229,39 +150,11 @@ const AboutUs = () => {
 
         {/* Animated Sections */}
         <div className="bg-[#1b1b1b] relative py-30">
-          <AnimatedAdSection top="top-60" zIndex={0}>
-            <ContentImageBlock
-              number="1"
-              title="Founded by designer"
-              paragraphs={[
-                "We value open communication and transparency, keeping you involved from start to finish. Our clear communication fosters trust and alignment, enriching collaboration.",
-                "Our experience with both startups and enterprises lets us adapt to your needs, ensuring a smooth and successful design process.",
-              ]}
-              imageSrc={teamImage1}
-            />
-          </AnimatedAdSection>
-          <AnimatedAdSection top="top-60" zIndex={1}>
-            <ContentImageBlock
-              number="2"
-              title="Collaboration Is Key"
-              paragraphs={[
-                "We value open communication and transparency, keeping you involved from start to finish. Our clear communication fosters trust and alignment, enriching collaboration.",
-                "Our experience with both startups and enterprises lets us adapt to your needs, ensuring a smooth and successful design process.",
-              ]}
-              imageSrc={teamImage2}
-            />
-          </AnimatedAdSection>
-          <AnimatedAdSection top="top-60" zIndex={2}>
-            <ContentImageBlock
-              number="3"
-              title="Full freedom & responsibility"
-              paragraphs={[
-                "We value open communication and transparency, keeping you involved from start to finish. Our clear communication fosters trust and alignment, enriching collaboration.",
-                "Our experience with both startups and enterprises lets us adapt to your needs, ensuring a smooth and successful design process.",
-              ]}
-              imageSrc={teamImage3}
-            />
-          </AnimatedAdSection>
+          {contentImageBlocks.map((block, index) => (
+            <AnimatedAdSection key={index} top="top-60" zIndex={index}>
+              <ContentImageBlock {...block} />
+            </AnimatedAdSection>
+          ))}
         </div>
       </div>
 
@@ -284,20 +177,7 @@ const AboutUs = () => {
         />
       </div>
 
-      <TeamScroller
-        teamMembers={[
-          { image: logo1, name: "Shahid Miah", role: "Founder & CEO" },
-          { image: logo2, name: "Alina Roy", role: "Creative Director" },
-          { image: logo3, name: "Jared Lee", role: "Design Lead" },
-          { image: logo1, name: "Nina Patel", role: "Product Strategist" },
-          { image: logo2, name: "Marco Lin", role: "UX Researcher" },
-          { image: logo3, name: "Shahid Miah", role: "Founder & CEO" },
-          { image: logo1, name: "Alina Roy", role: "Creative Director" },
-          { image: logo2, name: "Jared Lee", role: "Design Lead" },
-          { image: logo3, name: "Nina Patel", role: "Product Strategist" },
-          { image: logo1, name: "Marco Lin", role: "UX Researcher" },
-        ]}
-      />
+      <TeamScroller teamMembers={teamMembers} />
 
       <div className="bg-gray-200 pt-30">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8  text-center">
