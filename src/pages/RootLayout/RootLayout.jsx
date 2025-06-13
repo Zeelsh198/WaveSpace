@@ -1,8 +1,9 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import { Outlet, useLocation } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import SmoothScrollWrapper from "../../components/SmoothScrollWrapper/SmoothScrollWrapper";
+import Loader from "../../components/Loader/Loader";
 
 const RootLayout = () => {
   const location = useLocation();
@@ -30,7 +31,9 @@ const RootLayout = () => {
   return (
     <>
       {/* <SmoothScrollWrapper> */}
-        {" "}
+      {" "}
+
+      <Suspense fallback={<div><Loader /></div>}>
         <Navbar
           bgColor={navbarBgColor}
           txtColor={navbarTextColor}
@@ -42,6 +45,7 @@ const RootLayout = () => {
         />
         <Outlet />
         <Footer />
+      </Suspense>
       {/* </SmoothScrollWrapper> */}
     </>
   );
