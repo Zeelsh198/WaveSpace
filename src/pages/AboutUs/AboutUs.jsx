@@ -23,7 +23,6 @@ const AboutUs = () => {
   return (
     <>
       {/* Header Section */}
-
       <section className="w-full">
         {/* Header Section */}
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 my-12 sm:my-16 lg:my-20">
@@ -74,7 +73,6 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-
       <section className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 flex flex-col  md:flex-row items-start lg:items-center justify-between gap-6 md:gap-0 py-20">
         <div>
           {" "}

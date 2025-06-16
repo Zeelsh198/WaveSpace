@@ -1,10 +1,7 @@
-import React from "react";
 import ScrollColorShiftText from "../../components/ScrollColorShiftText/ScrollColorShiftText";
-
 import StepList from "../../components/StepList/StepList";
 import TestimonialHighlightCard from "../../components/TestimonialHighlightCard/TestimonialHighlightCard";
 import ButtonArrow from "../../components/Button/ButtonArrow";
-
 import TestimonialsSection from "../../components/TestimonialsSection/TestimonialsSection";
 import HoverPreviewList from "../../components/HoverPreviewList/HoverPreviewList";
 import {
@@ -27,7 +24,6 @@ const CaseStudies = () => {
             fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
             fontWeight="font-bold"
           />
-
           <ScrollColorShiftText
             text="solutions like them!"
             fromColor="#ffffffbf"
@@ -43,7 +39,6 @@ const CaseStudies = () => {
           <AdWithPhoto key={index} {...ad} />
         ))}
       </section>
-
       <section className="bg-black text-white py-30">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           {/* Top Heading */}

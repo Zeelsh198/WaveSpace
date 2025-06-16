@@ -1,8 +1,6 @@
 import PricingToggleGroup from "../../components/PricingToggleGroup/PricingToggleGroup";
 import RatingBadge from "../../components/RatingBadge/RatingBadge";
 import TextBox from "../../components/TextBox/TextBox";
-import UserProfileCard from "../../components/UserProfileCard/UserProfileCard";
-import ContactForm from "../../Form/ContactForm";
 import AskQuesTestimonial from "../../components/AskQuesTestimonial/AskQuesTestimonial";
 import Questions from "../../components/Questions/Questions";
 import ScrollColorShiftText from "../../components/ScrollColorShiftText/ScrollColorShiftText";
@@ -88,7 +86,6 @@ const Pricing = () => {
           </div>
         </div>
       </section>
-
       <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 font">
         <LogoMarquee
           scrollspeed={25}
@@ -262,8 +259,8 @@ const Pricing = () => {
             fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
             fontWeight="font-extrabold"
           />
-        </div></section>
-
+        </div>
+      </section>
       <section className="w-full bg-[#5d9ab6] py-20">
         <ScrollRevealLines
           line1Class="text-white"
@@ -292,7 +289,6 @@ const Pricing = () => {
           ))}
         </div>
       </section>
-
       <section className="bg-gray-200 py-30">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8  text-center">
           <ScrollColorShiftText
@@ -334,8 +330,6 @@ const Pricing = () => {
           </div>
         </div>
       </section>
-
-
     </>
   );
 };

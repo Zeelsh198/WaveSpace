@@ -2,7 +2,6 @@ import React from "react";
 import RatingBadge from "../../components/RatingBadge/RatingBadge";
 import TextBox from "../../components/TextBox/TextBox";
 import ButtonArrow from "../../components/Button/ButtonArrow";
-import ButtonArrow2 from "../../components/Button/ButtonArrow2";
 import servicesHeaderImg from "./ServicesAssets/services header.png";
 import LogoMarquee from "../../components/TrustedBy/LogoMarqee";
 import ServiceDetails from "../../components/ServiceDetails/ServiceDetails";
@@ -88,7 +87,6 @@ const Services = () => {
           </section>
         </div>
       </div>
-
       <section className="max-w-[1440px] bg-white mx-auto  px-4 sm:px-6 lg:px-8 gap-10">
         <LogoMarquee
           scrollspeed={25}
@@ -147,7 +145,6 @@ const Services = () => {
           </div>
         ))}
       </section>
-
       <section className="bg-gray-200 py-15">
         <div className="max-w-[1440px]  mx-auto px-4 sm:px-6 md:px-8 flex flex-col  md:flex-row items-start lg:items-end justify-between gap-6 md:gap-0 ">
           <div>
@@ -186,7 +183,6 @@ const Services = () => {
           ))}
         </div>
       </section>
-
       <section className="w-full bg-[#5d9ab6] py-20">
         <ScrollRevealLines
           line1Class="text-white"

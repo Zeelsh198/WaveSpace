@@ -1,4 +1,4 @@
-import BookCallButton from "../../components/Button/BookCallButton";
+
 import LogoMarquee from "../../components/TrustedBy/LogoMarqee";
 import RotatingText from "../../components/RotatingText/RotatingText";
 import ReviewBadge from "../../components/ReviewBadge/ReviewBadge";
@@ -19,9 +19,7 @@ import ImageMarquee from "../../components/TrustedBy/ImageMarquee";
 import Questions from "../../components/Questions/Questions";
 import AskQuesTestimonial from "../../components/AskQuesTestimonial/AskQuesTestimonial";
 import ContactInfoSection from "../../components/ContactInfo/ContactInfoSection";
-import ContactForm from "../../Form/ContactForm";
-import UserProfileCard from "../../components/UserProfileCard/UserProfileCard";
-import Footer from "../../components/Footer/Footer";
+
 import {
   steps,
   rotatingTexts,
@@ -112,7 +110,6 @@ const Home = () => {
         </div>
         <BgVideo cursorText="Play" bgColor="#fffc1a" color="black" />
       </section>
-
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 my-20 text-left">
         <ScrollColorShiftText
           text="500+ Founders trusted us. Get return  on"
@@ -266,7 +263,6 @@ const Home = () => {
           </AnimatedAdSection>
         ))}
       </div>
-
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8  text-center">
         <ScrollColorShiftText
           text="Find your best design into us."
@@ -285,7 +281,6 @@ const Home = () => {
           fontWeight="font-extrabold"
         />
       </div>
-
       <section className="w-full bg-[#5d9ab6] py-20">
         <ScrollRevealLines
           line1Class="text-white"
@@ -393,7 +388,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       <section className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 flex flex-col  md:flex-row items-start lg:items-center justify-between gap-6 md:gap-0 py-10">
         <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-6xl font-bold leading-tight">
           Got a project in mind? <br className="hidden lg:block" /> Let’s talk.
@@ -407,9 +401,7 @@ const Home = () => {
           />
         </div>
       </section>
-
       <ContactInfoSection />
-      {/* <Footer /> */}
     </>
   );
 };
