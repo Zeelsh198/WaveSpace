@@ -1,3 +1,16 @@
+/**
+ * @component Questions
+ *
+ * `Questions` is a reusable accordion-style FAQ component using Material UI's `Accordion`.
+ * It displays a single question that can be expanded to reveal an answer.
+ *
+ * @param {Object} props - Component props
+ * @param {string} props.question - The question text to be displayed in the collapsed view.
+ *
+ * @returns {JSX.Element} A styled FAQ accordion with a custom icon and answer content from dummy data.
+ */
+
+
 import React from "react";
 import ArrowOutwardSharpIcon from "@mui/icons-material/ArrowOutwardSharp";
 import {

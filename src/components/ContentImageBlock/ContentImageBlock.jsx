@@ -1,3 +1,35 @@
+/**
+ * @component ContentImageBlock
+ *
+ * `ContentImageBlock` is a flexible content section used to present textual content
+ * alongside an image. The layout can optionally be reversed to alternate text-image flow.
+ * Ideal for showcasing features, case studies, or storytelling blocks on a landing page.
+ *
+ * @example
+ * <ContentImageBlock
+ *   number="02"
+ *   title="We Design for Impact"
+ *   paragraphs={[
+ *     "Our approach blends creativity with strategy to ensure real results.",
+ *     "We focus on business goals, not just visuals."
+ *   ]}
+ *   imageSrc="/assets/design-visual.webp"
+ *   imageAlt="Design Process Visual"
+ *   reverse={true}
+ * />
+ *
+ * @param {Object} props - Component props
+ * @param {string} props.number - Section number or label to display above the title
+ * @param {string} props.title - Main heading/title of the block
+ * @param {string[]} props.paragraphs - Array of paragraph strings to render
+ * @param {string} props.imageSrc - Source path for the right-side image
+ * @param {string} props.imageAlt - Alternative text for the image
+ * @param {boolean} props.reverse - Whether to reverse the layout (text on right, image on left)
+ *
+ * @returns {JSX.Element} Rendered content block with text and image
+ */
+
+
 import React from "react";
 
 const ContentImageBlock = ({

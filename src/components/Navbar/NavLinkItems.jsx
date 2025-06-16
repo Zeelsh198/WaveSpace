@@ -1,3 +1,23 @@
+/**
+ * @component NavLinkItems
+ *
+ * `NavLinkItems` is a customizable navigation link component used within a navigation bar.
+ * It supports optional arrow icons, hover underline animation, and flexible styling through props.
+ *
+ * @param {Object} props - Component props
+ * @param {string} [props.label="Link"] - The text label of the navigation item.
+ * @param {boolean} [props.showIcon=false] - Whether to show an arrow icon beside the label.
+ * @param {string} [props.link="/"] - The route path to navigate to on click.
+ * @param {string} [props.textSize="text-base sm:text-lg md:text-xl"] - Tailwind text size classes.
+ * @param {string} [props.textColor="text-black"] - Tailwind text color class for the label.
+ * @param {string} [props.underlineColor="bg-black"] - Tailwind background color for the hover underline.
+ * @param {string} [props.arrowBgColor="bg-black"] - Tailwind background color for the arrow icon container.
+ * @param {string} [props.arrowIconColor="text-black"] - Tailwind text color for the arrow icon itself.
+ *
+ * @returns {JSX.Element} A styled and optionally animated `NavLink` component.
+ */
+
+
 import { NavLink } from "react-router-dom";
 import ArrowOutwardSharpIcon from "@mui/icons-material/ArrowOutwardSharp";
 

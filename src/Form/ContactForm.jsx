@@ -1,3 +1,17 @@
+/**
+ * @component ContactForm
+ *
+ * `ContactForm` is a fully responsive form component for user inquiries or project discussions.
+ * It includes fields for email, name, budget, discovery source, a message area, service checkboxes,
+ * and a submission button, along with an optional contact email link.
+ *
+ * @returns {JSX.Element} A styled contact form with input fields, dropdowns, checkboxes, and a submit button.
+ *
+ * @example
+ * <ContactForm />
+ */
+
+
 import React from 'react';
 
 const ContactForm = () => {

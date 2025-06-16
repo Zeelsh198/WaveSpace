@@ -1,3 +1,31 @@
+/**
+ * @component TestimonialCard
+ *
+ * `TestimonialCard` displays a user testimonial with their image, name, position, company, 
+ * and feedback. It supports customizable image dimensions and is typically used in testimonial sections.
+ *
+ * @param {Object} props - Component props
+ * @param {string} props.image - URL of the testimonial giver's image.
+ * @param {string} props.name - Name of the person providing the testimonial.
+ * @param {string} props.position - Job title or role of the person.
+ * @param {string} props.company - Company name where the person works.
+ * @param {string} props.testimonial - The testimonial or feedback text.
+ * @param {string} [props.imageHeight="360px"] - Custom height for the image.
+ * @param {string} [props.imageWidth="100%"] - Custom width for the image.
+ *
+ * @returns {JSX.Element} A styled card showing testimonial information.
+ *
+ * @example
+ * <TestimonialCard
+ *   image="/assets/john.jpg"
+ *   name="John Doe"
+ *   position="Product Manager"
+ *   company="TechCorp"
+ *   testimonial="This service exceeded our expectations in every way!"
+ * />
+ */
+
+
 import React from "react";
 
 const TestimonialCard = ({

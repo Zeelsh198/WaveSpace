@@ -1,3 +1,14 @@
+/**
+ * @component FooterBottomBar
+ *
+ * `FooterBottomBar` is a responsive footer component that displays social media links,
+ * a call-to-action section, company information, and a group of avatar images.
+ * It is typically placed at the bottom of the website to enhance branding and user navigation.
+ *
+ * @returns {JSX.Element} A footer layout with social links, CTA button, company info, and avatars
+ */
+
+
 import NavLinkItems from "../Navbar/NavLinkItems";
 import ArrowOutwardSharpIcon from "@mui/icons-material/ArrowOutwardSharp";
 import { Avatar, AvatarGroup } from "@mui/material";

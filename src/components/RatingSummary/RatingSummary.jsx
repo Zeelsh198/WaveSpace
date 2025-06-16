@@ -1,3 +1,14 @@
+/**
+ * @component RatingSummary
+ *
+ * `RatingSummary` is a static display component that showcases an overall rating score,
+ * star icons, total review count, and logos of rating platforms like Clutch, Fiverr, and Upwork.
+ * Commonly used in testimonial or trust sections to build credibility.
+ *
+ * @returns {JSX.Element} A visual summary block with rating stars, a numeric score, and review platform logos.
+ */
+
+
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import Clutch from "./RatingSummaryAssets/clutch.webp";

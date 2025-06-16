@@ -1,3 +1,26 @@
+/**
+ * @component StatCard
+ *
+ * `StatCard` is a stylized, responsive statistics or feature card component that displays
+ * a numeric index, two lines of bold content, and a hover-activated icon.
+ * It adapts to various screen sizes and includes smooth transition effects for hover states.
+ *
+ * @param {Object} props - Component props
+ * @param {number} props.index - The index number displayed at the top-left corner of the card.
+ * @param {string} props.line1 - The first line of the main content displayed at the bottom.
+ * @param {string} props.line2 - The second line of the main content displayed below `line1`.
+ *
+ * @returns {JSX.Element} A stat/feature card with index, content, and animated hover icon.
+ *
+ * @example
+ * <StatCard
+ *   index={1}
+ *   line1="Design"
+ *   line2="Excellence"
+ * />
+ */
+
+
 import { useState } from 'react';
 import ArrowOutwardSharpIcon from '@mui/icons-material/ArrowOutwardSharp';
 

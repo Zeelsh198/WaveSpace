@@ -1,3 +1,39 @@
+/**
+ * @component BlogCard
+ *
+ * `BlogCard` displays a blog post preview in either vertical or horizontal layout.
+ * It includes an image, tag, estimated read time, title, author details, and publish date.
+ * This card is typically used on a blog listing page or news section.
+ *
+ * @example
+ * <BlogCard
+ *   image="/blog1.webp"
+ *   tag="Design"
+ *   timeToRead="5"
+ *   title="How We Redesigned the Dashboard"
+ *   authorName="John Doe"
+ *   authorAvatar="/author.jpg"
+ *   authorLink="/author/john"
+ *   date="June 16, 2025"
+ *   layout="vertical"
+ * />
+ *
+ * @param {Object} props - Component props
+ * @param {string} props.image - Blog image URL
+ * @param {string} props.tag - Blog tag/category
+ * @param {string|number} props.timeToRead - Estimated read time in minutes
+ * @param {string} props.title - Blog title
+ * @param {string} props.authorName - Author's name
+ * @param {string} [props.authorAvatar] - Author image (optional)
+ * @param {string} [props.authorLink="#"] - URL to author's profile
+ * @param {string} props.date - Date string (optional fallback)
+ * @param {string} [props.publishDate] - Preferred publish date to display
+ * @param {string} [props.layout="vertical"] - Layout style: "vertical" or "horizontal"
+ *
+ * @returns {JSX.Element} Rendered blog card component
+ */
+
+
 import React from "react";
 import { Link } from "react-router-dom";
 import blog1 from "./BlogCardAssets/blog1.webp"

@@ -1,3 +1,22 @@
+/**
+ * @component HoverCardDetails
+ *
+ * `HoverCardDetails` is a visually engaging card component that reveals additional content
+ * on hover. It displays a background image with a title always visible, and a description 
+ * that animates into view when hovered. Ideal for showcasing services, categories, or features.
+ *
+ * @param {Object} props - Component props
+ * @param {string} props.imageSrc - Source URL for the background image.
+ * @param {string} [props.title="Finance & Fintech"] - Title text always visible on the card.
+ * @param {string} [props.description] - Description text that appears on hover.
+ * @param {string} [props.cardHeight="lg:h-[420px]"] - Tailwind CSS height class for card responsiveness.
+ * @param {string} [props.cardWidth="w-full"] - Tailwind CSS width class for layout control.
+ * @param {React.ReactNode} [props.children] - Additional content to render inside the description area.
+ *
+ * @returns {JSX.Element} A responsive, hoverable card with title and description content.
+ */
+
+
 import React from "react";
 
 const HoverCardDetails = ({

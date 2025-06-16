@@ -1,3 +1,15 @@
+/**
+ * @component ServicesMegaMenu
+ *
+ * `ServicesMegaMenu` is a full-width dropdown menu component designed to showcase a list of service offerings
+ * in a clean, structured format with icons and labels, along with a subscription card on the right.
+ * 
+ * It uses `framer-motion` for entry/exit animations and is intended to appear on hover or click under a nav item.
+ *
+ * @returns {JSX.Element} A fixed-position mega menu with service icons/labels and a call-to-action card.
+ */
+
+
 import {
   MdDesktopMac,
   MdPhoneIphone,

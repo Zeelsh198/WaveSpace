@@ -1,3 +1,21 @@
+/**
+ * @component FeedbackCard
+ *
+ * `FeedbackCard` is a UI component that displays a customer's testimonial or review,
+ * including the company name, feedback text, and reviewer information (avatar, name, role).
+ * Commonly used in testimonial sections on websites.
+ *
+ * @param {Object} props - Component props
+ * @param {string} props.company - Name of the company giving the feedback
+ * @param {string} props.feedback - Feedback or testimonial text
+ * @param {string} props.name - Name of the person giving the feedback
+ * @param {string} props.role - Role or designation of the reviewer
+ * @param {string} props.avatar - URL of the avatar image
+ *
+ * @returns {JSX.Element} A styled card showing feedback content and user info
+ */
+
+
 import React from "react";
 
 const FeedbackCard = ({ company, feedback, name, role, avatar }) => {

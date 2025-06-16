@@ -1,3 +1,16 @@
+/**
+ * `AvatarFounders` displays a group of founder avatars using MUI's `AvatarGroup`,
+ * followed by a short text indicating community support.
+ * It is typically used to show social proof or founder endorsements.
+ *
+ * @component `AvatarFounders`
+ * @example
+ * <AvatarFounders />
+ *
+ * @returns {JSX.Element} A group of avatars with a supporting message
+ */
+
+
 import { Avatar, AvatarGroup } from "@mui/material";
 import founder3 from "./FoundersAssets/67877f9495e27059b10a641e_founder img-1.webp";
 import founder2 from "./FoundersAssets/67877f9495e27059b10a641f_founder img-2.webp";

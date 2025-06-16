@@ -1,3 +1,30 @@
+/**
+ * @component ScrollRevealLines
+ *
+ * `ScrollRevealLines` is a scroll-activated heading animation component that uses GSAP and ScrollTrigger
+ * to animate two large text lines from opposite horizontal directions as they come into view.
+ *
+ * It is ideal for creating impactful hero or section-intro animations.
+ *
+ * @param {Object} props - Component props
+ * @param {string} props.line1 - The text content of the first line (animates from left to center).
+ * @param {string} props.line2 - The text content of the second line (animates from right to center).
+ * @param {string} [props.line1Class=""] - Additional Tailwind or CSS classes for styling the first line.
+ * @param {string} [props.line2Class=""] - Additional Tailwind or CSS classes for styling the second line.
+ * @param {string} [props.containerClass=""] - Additional Tailwind or CSS classes for the parent container.
+ *
+ * @returns {JSX.Element} A two-line heading component with scroll-triggered horizontal reveal animations.
+ *
+ * @example
+ * <ScrollRevealLines
+ *   line1="Creative"
+ *   line2="Solutions"
+ *   line1Class="text-gradient"
+ *   line2Class="text-yellow-400"
+ * />
+ */
+
+
 import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

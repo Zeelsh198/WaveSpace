@@ -1,3 +1,15 @@
+/**
+ * @component Footer
+ *
+ * `Footer` is a comprehensive website footer section combining various subcomponents like
+ * an introduction, service links, case studies, contact options, a contact form, and a bottom bar.
+ * It is designed to provide navigation, branding, and user engagement through CTA and forms.
+ *
+ * @returns {JSX.Element} A responsive footer layout with multiple columns, a contact form, 
+ * call-to-action section, and a decorative footer image.
+ */
+
+
 import FooterIntro from "./FooterIntro";
 import FooterLinksColumn from "./FooterLinksColumn";
 import footerimg from "./FooterAssets/footer.webp";

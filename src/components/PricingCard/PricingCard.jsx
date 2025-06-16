@@ -1,3 +1,29 @@
+/**
+ * @component PricingCard
+ *
+ * `PricingCard` is a reusable UI card component for displaying pricing plans, feature lists, and CTAs.
+ * It supports customization for title, price, description, button labels, badge, features, and bottom notes.
+ *
+ * @param {Object} props - Component props
+ * @param {string} props.label1 - Label for the main call-to-action button.
+ * @param {string} props.label2 - Label for the secondary "Book a Call" button.
+ * @param {string} props.bgColor - Tailwind background color class for the main button.
+ * @param {string} props.title - Title of the pricing plan.
+ * @param {string} props.price - Price text to be displayed prominently.
+ * @param {string} props.subText - Smaller subtext under the price.
+ * @param {boolean} [props.showBookCall=true] - Whether to show the secondary "Book a Call" button.
+ * @param {string} [props.badge] - Optional badge text displayed next to the title.
+ * @param {string[]} [props.features=[]] - List of HTML-formatted features included in the plan.
+ * @param {string} [props.viewAllLink] - Optional link to view all features or details.
+ * @param {string} [props.bottomNote] - Full bottom note text displayed under the card.
+ * @param {string} [props.bottomNoteHighlight] - Substring within the bottom note to highlight.
+ * @param {string} [props.highlightColor="#d9fd51"] - Hex color used for highlight elements like badge and links.
+ * @param {string} [props.border] - Tailwind class for optional border styling.
+ *
+ * @returns {JSX.Element} A styled pricing card component with customizable call-to-actions and features.
+ */
+
+
 import ButtonArrow from "../Button/ButtonArrow";
 const PricingCard = ({
   label1,

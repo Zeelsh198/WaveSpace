@@ -1,3 +1,22 @@
+/**
+ * @component TestimonialsSection
+ *
+ * `TestimonialsSection` is a horizontally scrollable carousel section that showcases
+ * client testimonials alongside an aggregated `RatingSummary`. It displays 4 cards at a time
+ * and includes dot-based navigation to slide between groups of testimonials.
+ *
+ * The section supports smooth scrolling, auto-alignment via scroll snapping, and dynamic active dot
+ * tracking based on scroll position. Cards include a combination of one static `RatingSummary` component
+ * and multiple dynamic `FeedbackCard` components built from the `feedbackData` array.
+ *
+ * @returns {JSX.Element} A testimonial carousel section with rating summary, feedback cards,
+ * and navigation dots.
+ *
+ * @example
+ * <TestimonialsSection />
+ */
+
+
 import { useEffect, useRef, useState } from "react";
 import FeedbackCard from "../FeedBackCard/FeedBackCard";
 import RatingSummary from "../RatingSummary/RatingSummary";

@@ -1,3 +1,21 @@
+/**
+ * @component RatingBadge
+ *
+ * `RatingBadge` is a compact badge component that displays a rating source label,
+ * a star-based rating, and the numerical value. It is commonly used to highlight
+ * review scores (e.g., from Clutch, Google, etc.) with customizable styles.
+ *
+ * @param {Object} props - Component props
+ * @param {string} [props.text="Clutch"] - The label or source of the rating (e.g., "Clutch").
+ * @param {number} [props.rating=5] - The number of stars to display. Should be a number between 0 and 5.
+ * @param {string} [props.bgColor="bg-[#101010]"] - Tailwind background color class for the badge.
+ * @param {string} [props.textColor="text-white"] - Tailwind text color class for the badge content.
+ * @param {string} [props.borderColor="border-white"] - Tailwind border color class for the badge.
+ *
+ * @returns {JSX.Element} A styled badge with rating stars and a label.
+ */
+
+
 import StarIcon from "@mui/icons-material/Star";
 
 const RatingBadge = ({

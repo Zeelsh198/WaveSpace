@@ -1,3 +1,23 @@
+/**
+ * @component Navbar
+ *
+ * `Navbar` is a responsive navigation bar component designed for desktop and mobile views.
+ * It includes a logo, navigation links with optional mega menu (e.g., Services), and a styled contact button.
+ * For mobile devices, it opens a fullscreen sliding menu with navigation and a contact CTA.
+ *
+ * @param {Object} props - Component props
+ * @param {string} [props.bgColor="bg-white"] - Tailwind background color class for the navbar.
+ * @param {string} [props.txtColor="text-black"] - Tailwind text color for navbar links and text.
+ * @param {string} [props.underlineColor] - Tailwind class for the underline hover effect of nav links.
+ * @param {string} [props.arrowColor] - Tailwind background color class for nav link arrow container.
+ * @param {string} [props.arrowIconColor] - Tailwind text color class for the arrow icon itself.
+ * @param {string} [props.btnBgColor] - Tailwind class for the contact button background.
+ * @param {string} [props.btnTextColor] - Tailwind class for the contact button text.
+ *
+ * @returns {JSX.Element} A responsive navigation bar with dynamic props, mega menu, and mobile toggle menu.
+ */
+
+
 import { useState } from "react";
 import ButtonArrow from "../Button/ButtonArrow";
 import Logo from "./Logo";

@@ -1,3 +1,34 @@
+/**
+ * @component ImageMarquee
+ *
+ * `ImageMarquee` is a horizontally scrolling image strip component used to showcase logos,
+ * product thumbnails, or brand visuals. It accepts custom scroll speed, direction, dimensions,
+ * and gap spacing between images. The marquee duplicates the image array for seamless looping.
+ *
+ * @param {Object} props - Component props
+ * @param {string[]} [props.images=[]] - Array of image URLs to display in the marquee.
+ * @param {number} [props.scrollSpeed=700] - Duration (in seconds) of one full scroll cycle.
+ * @param {string} [props.height=""] - Optional Tailwind classes for image height (e.g., `h-20`).
+ * @param {string} [props.width=""] - Optional Tailwind classes for image width (e.g., `w-40`).
+ * @param {string} [props.gap="mx-2"] - Horizontal margin between images (e.g., `mx-4`).
+ * @param {string} [props.direction="left"] - Direction of scroll: `"left"` or `"right"`.
+ * @param {string} [props.imageClass] - Additional Tailwind classes for each `<img>` element.
+ *
+ * @returns {JSX.Element} A responsive, animated marquee of images scrolling horizontally.
+ *
+ * @example
+ * <ImageMarquee
+ *   images={[img1, img2, img3]}
+ *   scrollSpeed={40}
+ *   height="h-20"
+ *   width="w-32"
+ *   gap="mx-4"
+ *   direction="right"
+ *   imageClass="rounded-lg"
+ * />
+ */
+
+
 import React from "react";
 
 const ImageMarquee = ({

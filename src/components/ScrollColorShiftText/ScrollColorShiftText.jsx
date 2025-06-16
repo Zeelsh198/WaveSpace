@@ -1,3 +1,28 @@
+/**
+ * @component ScrollColorShiftText
+ *
+ * `ScrollColorShiftText` is a scroll-animated text component that gradually fades in each letter
+ * and transitions its color from a base to a target value using GSAP and ScrollTrigger.
+ * It supports highlighting specific words with a different color.
+ *
+ * @param {Object} props - Component props
+ * @param {string} [props.text=""] - The full text string to be animated and displayed.
+ * @param {string} [props.fromColor="#ccc"] - The initial color of each letter before scrolling.
+ * @param {string} [props.toColor="#000"] - The final color of each letter after animation.
+ * @param {React.RefObject} [props.scrollContainerRef] - Optional reference to a scroll container (defaults to window).
+ * @param {string} [props.className="text-left"] - Tailwind class for text alignment or custom layout.
+ * @param {string} [props.fontSize="text-4xl"] - Tailwind class for font size.
+ * @param {string} [props.fontWeight="font-semibold"] - Tailwind class for font weight.
+ * @param {string} [props.lineHeight="leading-tight"] - Tailwind class for line height.
+ * @param {string[]} [props.highlightWords=[]] - Array of words that should be highlighted with a different color.
+ * @param {string} [props.highlightColor="#2CA9E1"] - Color used for highlighting specified words.
+ * @param {string} [props.animationStart="top bottom"] - ScrollTrigger's `start` position.
+ * @param {string} [props.animationEnd="center center"] - ScrollTrigger's `end` position.
+ *
+ * @returns {JSX.Element} A styled, animated paragraph with individual letters transitioning color on scroll.
+ */
+
+
 import { useEffect, useRef, useMemo } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

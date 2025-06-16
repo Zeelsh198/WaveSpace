@@ -1,3 +1,31 @@
+
+/**
+ * @component TestimonialHighlightCard
+ *
+ * `TestimonialHighlightCard` displays a compact testimonial card featuring a quote,
+ * the user's image, name, and position. It's designed to be used in highlight or carousel sections.
+ * Custom colors for text, name, and position are supported via props.
+ *
+ * @param {Object} props - Component props
+ * @param {string} props.testimonial - The testimonial or quote from the user.
+ * @param {string} props.image - URL of the user's image.
+ * @param {string} props.name - Name of the person giving the testimonial.
+ * @param {string} props.position - The role or position of the person.
+ * @param {string} [props.textColor="text-gray-700"] - Tailwind class for testimonial text color.
+ * @param {string} [props.nameColor="text-black"] - Tailwind class for name text color.
+ * @param {string} [props.positionColor="text-gray-600"] - Tailwind class for position text color.
+ *
+ * @returns {JSX.Element} A stylized testimonial card component.
+ *
+ * @example
+ * <TestimonialHighlightCard
+ *   testimonial="Working with this team was an absolute pleasure."
+ *   image="/assets/person1.jpg"
+ *   name="Jane Doe"
+ *   position="Founder, BrightTech"
+ * />
+ */
+
 import React from "react";
 
 const TestimonialHighlightCard = ({

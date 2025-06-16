@@ -1,3 +1,17 @@
+/**
+ * @component ContactInfoSection
+ *
+ * `ContactInfoSection` displays a structured list of international office contact details
+ * including country, email, WhatsApp phone number, and address. It also shows
+ * a separate section for business inquiries and careers. Designed for use in contact pages or footers.
+ *
+ * @example
+ * <ContactInfoSection />
+ *
+ * @returns {JSX.Element} Rendered section with contact information for various countries and inquiry types.
+ */
+
+
 import { FaEnvelope, FaWhatsapp } from "react-icons/fa";
 
 const locations = [

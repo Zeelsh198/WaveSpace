@@ -1,3 +1,14 @@
+/**
+ * @component HaveAProject
+ *
+ * `HaveAProject` is a call-to-action (CTA) component that invites users to initiate contact for new projects.
+ * It displays a heading, a list of service features, and a profile card to schedule a call.
+ * Typically used in contact or service inquiry sections.
+ *
+ * @returns {JSX.Element} A section with a project inquiry prompt, feature highlights, and user profile CTA.
+ */
+
+
 import React from "react";
 import UserProfileCard from "../UserProfileCard/UserProfileCard";
 

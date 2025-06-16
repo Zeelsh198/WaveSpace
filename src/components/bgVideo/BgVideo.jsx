@@ -1,4 +1,25 @@
-// src/components/bgVideo/BgVideo.jsx
+/**
+ * `BgVideo` is a reusable background video component that supports a custom hover cursor
+ * using the `CustomCursor` component. It plays a video in a loop, muted and autoplayed,
+ * ideal for full-width hero sections or backgrounds.
+ *
+ * @component `BgVideo`
+ * @example
+ * <BgVideo
+ *   video="/assets/hero-video.mp4"
+ *   cursorText="Watch"
+ *   bgColor="#ffffff"
+ *   color="#000000"
+ * />
+ *
+ * @param {Object} props - Component props
+ * @param {string} [props.video=bgVideo1] - Video source URL or imported path
+ * @param {string} [props.cursorText="Play"] - Text displayed inside the custom cursor
+ * @param {string} [props.bgColor="white"] - Background color for the custom cursor
+ * @param {string} [props.color="black"] - Text color for the custom cursor
+ *
+ * @returns {JSX.Element} Rendered background video with a custom hover cursor
+ */
 
 import { useRef } from "react";
 import CustomCursor from "../CustomCursor/CustomCursor";

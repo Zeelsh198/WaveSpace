@@ -1,3 +1,27 @@
+/**
+ * @component LogoMarquee
+ *
+ * `LogoMarquee` is a horizontally scrolling component used to showcase a continuous strip
+ * of company logos. It includes a centered heading and a smoothly animated marquee that
+ * loops infinitely from right to left.
+ *
+ * Ideal for displaying partner, client, or sponsor logos in a visually appealing,
+ * minimalistic way.
+ *
+ * @param {Object} props - Component props
+ * @param {string} [props.text="Trusted by 500+ global companies"] - Optional heading text displayed above the logo strip.
+ * @param {string[]} [props.logos=[]] - An array of image URLs (or imported assets) representing company logos.
+ *
+ * @returns {JSX.Element} A section with an animated horizontal logo marquee and a heading.
+ *
+ * @example
+ * <LogoMarquee
+ *   text="Trusted by 1000+ brands worldwide"
+ *   logos={[logo1, logo2, logo3]}
+ * />
+ */
+
+
 // src/components/LogoMarquee.jsx
 import { keyframes } from "@emotion/react";
 import { Box } from "@mui/material";

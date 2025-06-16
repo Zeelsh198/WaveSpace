@@ -1,3 +1,20 @@
+/**
+ * @component ReviewBadge
+ *
+ * `ReviewBadge` is a compact badge component that displays a star rating along with
+ * the platform name and total number of reviews. It visually represents user feedback
+ * for platforms like Clutch, Google, or others.
+ *
+ * @param {Object} props - Component props
+ * @param {number} [props.stars=5] - Number of stars to highlight (out of 5).
+ * @param {number} [props.reviewCount=6] - Total number of reviews to display.
+ * @param {string} [props.platform="Clutch"] - The name of the review platform.
+ * @param {string} [props.reviewedText="REVIEWED ON"] - Optional label shown above the platform name.
+ *
+ * @returns {JSX.Element} A badge displaying review source, stars, and review count.
+ */
+
+
 import React from "react";
 import { FaStar } from "react-icons/fa";
 

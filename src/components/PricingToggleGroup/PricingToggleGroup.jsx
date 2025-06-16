@@ -1,3 +1,32 @@
+/**
+ * @component PricingToggleGroup
+ *
+ * `PricingToggleGroup` displays a toggleable list of pricing plans along with currency options.
+ * It's commonly used in pricing sections to allow users to switch between different plans (e.g., Monthly, Annual)
+ * and different currencies (e.g., USD, INR).
+ *
+ * @param {Object} props - Component props
+ * @param {Array} props.plans - List of pricing plan options. Each plan should be an object with:
+ * @param {string} props.plans[].label - Label of the pricing plan (e.g., "Monthly").
+ * @param {boolean} [props.plans[].highlighted=false] - Whether the plan is highlighted (applies highlight color).
+ * @param {string} [props.plans[].badge] - Optional badge text shown next to highlighted plans.
+ * @param {Array} props.currencies - List of currency toggle options. Each currency should be an object with:
+ * @param {string|JSX.Element} props.currencies[].icon - Icon or symbol for the currency (e.g., "$").
+ * @param {string} props.currencies[].label - Label text for the currency (e.g., "USD").
+ * @param {boolean} props.currencies[].active - Whether this currency is currently active.
+ * @param {string} [props.highlightColor="bg-lime-300"] - Tailwind class for the highlighted plan background.
+ * @param {string} [props.badgeBgColor="bg-black"] - Tailwind class for the badge background.
+ * @param {string} [props.badgeTextColor="text-lime-300"] - Tailwind class for the badge text color.
+ * @param {string} [props.planTextColor="text-white"] - Tailwind text color class for unhighlighted plans.
+ * @param {string} [props.activeCurrencyBg="bg-white"] - Tailwind background color class for active currency toggle.
+ * @param {string} [props.inactiveCurrencyBg="bg-[#2b2b2b]"] - Tailwind background for currency toggle container.
+ * @param {string} [props.activeCurrencyText="text-black"] - Tailwind text color class for active currency.
+ * @param {string} [props.inactiveCurrencyText="text-white"] - Tailwind text color class for inactive currency.
+ *
+ * @returns {JSX.Element} A responsive toggle group UI with plans and currency options.
+ */
+
+
 import React from "react";
 
 const PricingToggleGroup = ({

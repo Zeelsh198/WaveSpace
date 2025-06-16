@@ -1,3 +1,18 @@
+/**
+ * @component SubNavbar
+ *
+ * `SubNavbar` is a responsive secondary navigation bar featuring navigation links
+ * and a built-in search field. Useful for sub-sections of a website such as blogs,
+ * documentation, or dashboards.
+ *
+ * @param {Object} props - Component props
+ * @param {Array<{ label: string, link: string }>} props.navLinks - Array of navigation links with `label` and `link`.
+ * @param {string} [props.searchPlaceholder="Search..."] - Placeholder text for the search input.
+ *
+ * @returns {JSX.Element} A horizontal navbar with animated active tabs and a search box.
+ */
+
+
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";

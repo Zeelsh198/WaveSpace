@@ -1,3 +1,20 @@
+/**
+ * @component InfoCard
+ *
+ * `InfoCard` is a reusable component that displays a feature block with an icon,
+ * title, description, and a list of bullet-pointed features. It’s ideal for service
+ * highlights, feature sections, or informational content blocks.
+ *
+ * @param {Object} props - Component props
+ * @param {JSX.Element} props.icon - React icon or custom element shown at the top.
+ * @param {string} props.title - The main title or heading of the card.
+ * @param {string} props.description - A brief paragraph describing the content.
+ * @param {Array<string>} props.features - List of features or bullet points.
+ *
+ * @returns {JSX.Element} A styled content card with icon, heading, description, and features list.
+ */
+
+
 import React from "react";
 
 const InfoCard = ({ icon, title, description, features }) => {

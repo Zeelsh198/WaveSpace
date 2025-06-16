@@ -1,3 +1,26 @@
+/**
+ * @component UserProfileCard
+ *
+ * `UserProfileCard` is a compact user profile summary card that displays a user's
+ * image, name, title, and an action button. It is suitable for testimonial sections,
+ * author cards, or team member highlights.
+ *
+ * @param {Object} props - Component props
+ * @param {string} [props.name="Shahid Miah"] - Name of the user.
+ * @param {string} [props.title="Founder & CEO"] - Job title or role of the user.
+ * @param {string} [props.image=image1] - Source URL or import path for the user image.
+ *
+ * @returns {JSX.Element} A responsive horizontal card with an avatar, name, title, and icon button.
+ *
+ * @example
+ * <UserProfileCard
+ *   name="Jane Doe"
+ *   title="Design Director"
+ *   image="/images/team/jane.jpg"
+ * />
+ */
+
+
 import React from "react";
 import image1 from "../AskQuesTestimonial/AskQuesTestimonialAssets/1.webp";
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';

@@ -1,12 +1,10 @@
 import React from "react";
 import ScrollColorShiftText from "../../components/ScrollColorShiftText/ScrollColorShiftText";
-import BrandingAds from "../../components/Branding/BrandingAds";
-import AdWithPhoto2 from "../../components/AdWithPhoto/AdWithPhoto2";
+
 import StepList from "../../components/StepList/StepList";
 import TestimonialHighlightCard from "../../components/TestimonialHighlightCard/TestimonialHighlightCard";
 import ButtonArrow from "../../components/Button/ButtonArrow";
-import UserProfileCard from "../../components/UserProfileCard/UserProfileCard";
-import ContactForm from "../../Form/ContactForm";
+
 import TestimonialsSection from "../../components/TestimonialsSection/TestimonialsSection";
 import HoverPreviewList from "../../components/HoverPreviewList/HoverPreviewList";
 import {
@@ -14,6 +12,7 @@ import {
   hoverPreviewListData,
 } from "../../utils/caseStudiesDummyData";
 import { steps, stepListTestimonial } from "../../utils/homeDummyData";
+import AdWithPhoto from "../../components/AdWithPhoto/AdWithPhoto";
 
 const CaseStudies = () => {
   return (
@@ -39,11 +38,12 @@ const CaseStudies = () => {
           />
         </div>
       </section>
-      <section className="max-w-[1440px] mx-auto grid grid-cols-1 sm:grid-cols-2 px-4 sm:px-6 lg:px-8 gap-6  py-10">
+      <section className="max-w-[1440px] mx-auto grid grid-cols-1 sm:grid-cols-2 px-4 sm:px-6 lg:px-8 gap-6 py-10">
         {adWithPhotoData2.map((ad, index) => (
-          <AdWithPhoto2 key={index} {...ad} />
+          <AdWithPhoto key={index} {...ad} />
         ))}
       </section>
+
       <section className="bg-black text-white py-30">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           {/* Top Heading */}

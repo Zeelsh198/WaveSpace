@@ -1,3 +1,18 @@
+/**
+ * @component HoverPreviewList
+ *
+ * `HoverPreviewList` is a two-column list component where each list item reveals a large image
+ * preview when hovered. Ideal for use cases like project showcases, blog indexes, or visual menus.
+ * It supports alternating column logic and responsive hover previews with smooth animations.
+ *
+ * @param {Object} props - Component props
+ * @param {Array<Object>} props.list - Array of list items, each containing at least an `id`, `title`, and optional `img`.
+ * @param {string} [props.containerClass] - Optional Tailwind CSS classes to customize the outer container.
+ *
+ * @returns {JSX.Element} A responsive grid list with image hover previews.
+ */
+
+
 import React, { useState } from "react";
 import ArrowOutwardSharpIcon from "@mui/icons-material/ArrowOutwardSharp";
 

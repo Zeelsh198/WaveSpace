@@ -1,3 +1,26 @@
+/**
+ * @component CustomCursor
+ *
+ * `CustomCursor` is a reusable component that creates a custom-styled cursor with text
+ * and appears only when the user hovers over a specific DOM element (provided via `targetRef`).
+ * The cursor follows the mouse pointer inside the target area and disappears when it leaves.
+ *
+ * @example
+ * const ref = useRef();
+ * <div ref={ref}>
+ *   <CustomCursor text="Play" bgColor="#fff" color="#000" targetRef={ref} />
+ * </div>
+ *
+ * @param {Object} props - Component props
+ * @param {string} [props.text=""] - Text to be displayed inside the cursor
+ * @param {string} [props.color="white"] - Text color of the cursor
+ * @param {string} [props.bgColor="black"] - Background color of the cursor
+ * @param {React.RefObject} props.targetRef - React ref to the DOM element the cursor should appear over
+ *
+ * @returns {JSX.Element|null} A styled cursor element that tracks mouse movement, or null when not visible
+ */
+
+
 import React, { useState, useEffect } from "react";
 
 const CustomCursor = ({

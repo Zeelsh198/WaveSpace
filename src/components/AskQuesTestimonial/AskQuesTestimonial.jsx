@@ -1,3 +1,28 @@
+/**
+ * `AskQuesTestimonial` is a promotional testimonial block designed to invite users
+ * to reach out via WhatsApp or ask questions. It includes an image, a brief intro,
+ * and a call-to-action button.
+ *
+ * @component `AskQuesTestimonial`
+ * @example
+ * <AskQuesTestimonial
+ *   img="/assets/avatar.png"
+ *   name="Jane Doe"
+ *   designation="Founder & CEO of Startup"
+ *   message="Feel free to connect with me!"
+ *   buttonText="Chat Now"
+ * />
+ *
+ * @param {Object} props - Component props
+ * @param {string} [props.img=img1] - URL or path to the testimonial image
+ * @param {string} [props.name="Shahid"] - Name of the person giving the testimonial
+ * @param {string} [props.designation="CEO and <>Founder of Wavespace"] - Person's role or title
+ * @param {string} [props.message="Don't hesitate to reach out to me anytime – I'm here to answer all your questions!"] - Custom message text
+ * @param {string} [props.buttonText="Ask Questions"] - Text displayed on the call-to-action button
+ *
+ * @returns {JSX.Element} Rendered testimonial component
+ */
+
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import img1 from "./AskQuesTestimonialAssets/1.webp";

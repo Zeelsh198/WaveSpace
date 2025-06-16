@@ -1,3 +1,33 @@
+/**
+ * @component BrandingAds
+ *
+ * `BrandingAds` is a flexible promotional component used to showcase a brand,
+ * product, or service with a combination of heading, description, bullet points,
+ * and a supporting image. It's responsive and suitable for landing pages or
+ * promotional banners.
+ *
+ * @example
+ * <BrandingAds
+ *   bgColor="bg-[#F9FAFB]"
+ *   textColor="text-gray-900"
+ *   heading="Your Product, Reimagined"
+ *   description="We craft seamless user journeys from brand to interaction."
+ *   bulletPoints="Web Design, Branding, UX Research"
+ *   imageSrc="/assets/branding-ad.webp"
+ * />
+ *
+ * @param {Object} props - Component props
+ * @param {string} props.bgColor - Tailwind background color class (e.g., "bg-white", "bg-gray-100")
+ * @param {string} props.textColor - Tailwind text color class (e.g., "text-black", "text-gray-800")
+ * @param {string} props.heading - Main headline text
+ * @param {string} props.description - Supporting description text
+ * @param {string} props.bulletPoints - Comma-separated bullet point string
+ * @param {string} props.imageSrc - Image URL to display on the right side
+ *
+ * @returns {JSX.Element} Rendered branding ad block
+ */
+
+
 import React from "react";
 
 const BrandingAds = ({

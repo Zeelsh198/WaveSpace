@@ -1,3 +1,30 @@
+/**
+ * @component ServiceDetails
+ *
+ * `ServiceDetails` is a layout component used to present a service or offering in a two-column format
+ * with an image and a list of related sub-services. The layout is responsive and allows control over the
+ * position of the image (left or right).
+ *
+ * @param {Object} props - Component props
+ * @param {string} props.image - The URL or path to the service image.
+ * @param {string} props.title - The main heading or title of the service section.
+ * @param {string} props.description - A short description or overview of the service.
+ * @param {string[]} [props.services] - An array of sub-service names (default list is provided).
+ * @param {boolean} [props.imageOnLeft=true] - Whether the image should appear on the left (`true`) or right (`false`) on large screens.
+ *
+ * @returns {JSX.Element} A responsive section component combining an image and a service list with transition effects.
+ *
+ * @example
+ * <ServiceDetails
+ *   image="/assets/ui-ux.png"
+ *   title="UI/UX Design"
+ *   description="We craft beautiful, user-friendly digital products for any platform."
+ *   services={["UX Audit", "Design System", "Prototyping"]}
+ *   imageOnLeft={false}
+ * />
+ */
+
+
 import React from "react";
 import ArrowOutwardSharpIcon from "@mui/icons-material/ArrowOutwardSharp";
 

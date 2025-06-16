@@ -1,3 +1,27 @@
+/**
+ * @component StepList
+ *
+ * `StepList` renders a vertical list of steps, each prefixed with a numbered index.
+ * It displays each step with a left-aligned index and label, and a right-aligned arrow icon.
+ * The component is styled with a dark background and responsive typography.
+ *
+ * @param {Object} props - Component props
+ * @param {string[]} props.steps - An array of step titles to display in the list.
+ *
+ * @returns {JSX.Element} A styled vertical list of steps with index numbers and arrow icons.
+ *
+ * @example
+ * <StepList
+ *   steps={[
+ *     "Understand client needs",
+ *     "Design wireframes",
+ *     "Develop UI components",
+ *     "Deploy to production"
+ *   ]}
+ * />
+ */
+
+
 import React from "react";
 import ArrowOutwardSharpIcon from "@mui/icons-material/ArrowOutwardSharp";
 
