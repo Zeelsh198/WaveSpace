@@ -12,9 +12,9 @@
 
 
 import { Avatar, AvatarGroup } from "@mui/material";
-import founder3 from "./FoundersAssets/67877f9495e27059b10a641e_founder img-1.webp";
-import founder2 from "./FoundersAssets/67877f9495e27059b10a641f_founder img-2.webp";
-import founder1 from "./FoundersAssets/67877f9495e27059b10a6435_ef5fd2a467fb1a0143aaf268d7342b19_ceo image.webp";
+import founder3 from "../../../public/Images/FoundersAssets/67877f9495e27059b10a641e_founder img-1.webp";
+import founder2 from "../../../public/Images/FoundersAssets/67877f9495e27059b10a641f_founder img-2.webp";
+import founder1 from "../../../public/Images/FoundersAssets/67877f9495e27059b10a6435_ef5fd2a467fb1a0143aaf268d7342b19_ceo image.webp";
 
 const AvatarFounders = () => {
   return (

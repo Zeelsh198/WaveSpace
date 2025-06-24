@@ -1,6 +1,7 @@
 import ImageStrip from "./ImageStrip";
 import "../../App"; // If this includes Tailwind or global styles
-import src from "./companyAssets/679b761bdd06dbd924b42ab6_Kodezi.webp";
+
+import src from "../../../public/Images/companyAssets/679b761bdd06dbd924b42ab6_Kodezi.webp";
 
 export default {
   title: "Components/ImageStrip",
@@ -15,6 +16,6 @@ const Template = (args) => <ImageStrip {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  src ,
+  src,
   alt: "placeholder",
 };

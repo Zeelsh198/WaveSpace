@@ -22,7 +22,7 @@
 
 
 import React from "react";
-import image1 from "../AskQuesTestimonial/AskQuesTestimonialAssets/1.webp";
+import image1 from "../../../public/Images/AskQuesTestimonialAssets/1.webp";
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 const UserProfileCard = ({
   name = "Shahid Miah",

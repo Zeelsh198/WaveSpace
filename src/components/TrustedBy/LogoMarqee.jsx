@@ -29,10 +29,10 @@ import { styled } from "@mui/system";
 import ImageStrip from "./ImageStrip";
 import "../../App";
 
-import logo1 from "./companyAssets/679b761bdd06dbd924b42ab6_Kodezi.webp";
-import logo2 from "./companyAssets/679b761c7282e0a9ae19291d_Door2day-7.webp";
-import logo3 from "./companyAssets/679b761cd11c374c8ab434c8_Door2day-5.webp";
-import logo4 from "./companyAssets/679b76198416189108165afa_Mavis-1.webp";
+import logo1 from "../../../public/Images/companyAssets/679b761bdd06dbd924b42ab6_Kodezi.webp";
+import logo2 from "../../../public/Images/companyAssets/679b761c7282e0a9ae19291d_Door2day-7.webp";
+import logo3 from "../../../public/Images/companyAssets/679b761cd11c374c8ab434c8_Door2day-5.webp";
+import logo4 from "../../../public/Images/companyAssets/679b76198416189108165afa_Mavis-1.webp";
 // add as many logos as needed...
 
 const scroll = keyframes`

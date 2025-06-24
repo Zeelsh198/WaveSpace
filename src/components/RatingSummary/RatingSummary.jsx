@@ -11,9 +11,9 @@
 
 import React from "react";
 import { FaStar } from "react-icons/fa";
-import Clutch from "./RatingSummaryAssets/clutch.webp";
-import fiverrpro from "./RatingSummaryAssets/fiverrpro.webp";
-import upwork from "./RatingSummaryAssets/upwork.webp";
+import Clutch from "../../../public/Images/RatingSummaryAssets/clutch.webp";
+import fiverrpro from "../../../public/Images/RatingSummaryAssets/fiverrpro.webp";
+import upwork from "../../../public/Images/RatingSummaryAssets/upwork.webp";
 
 const RatingSummary = () => {
   return (

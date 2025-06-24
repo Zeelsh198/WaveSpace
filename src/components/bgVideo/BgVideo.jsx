@@ -23,7 +23,7 @@
 
 import { useRef } from "react";
 import CustomCursor from "../CustomCursor/CustomCursor";
-import bgVideo1 from "./bgVideoAssets/ZoFtvx5LeNNTwqF2_Wavespace-UI_UXDesignAgencyhover-1-.mp4";
+import bgVideo1 from "../../../public/Videos/bgVideoAssets/ZoFtvx5LeNNTwqF2_Wavespace-UI_UXDesignAgencyhover-1-.mp4"
 
 const BgVideo = ({ video = bgVideo1, cursorText = "Play", bgColor = "white", color = "black" }) => {
   const containerRef = useRef(null);

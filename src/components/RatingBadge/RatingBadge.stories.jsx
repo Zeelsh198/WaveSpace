@@ -1,5 +1,5 @@
 import "../../App"
-import clutch from "../RatingSummary/RatingSummaryAssets/Clutch.webp"
+import clutch from "../../../public/Images/RatingSummaryAssets/Clutch.webp"
 import RatingBadge from "./RatingBadge";
 
 export default {

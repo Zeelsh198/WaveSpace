@@ -1,11 +1,11 @@
-import adImg6 from "../components/AdWithPhoto/AdWithPhotoAssets/ad6.webp";
-import adImg7 from "../components/AdWithPhoto/AdWithPhotoAssets/ad7.webp";
-import adImg8 from "../components/AdWithPhoto/AdWithPhotoAssets/ad8.webp";
-import adImg9 from "../components/AdWithPhoto/AdWithPhotoAssets/ad9.webp";
-import adImg10 from "../components/AdWithPhoto/AdWithPhotoAssets/ad10.webp";
-import adImg11 from "../components/AdWithPhoto/AdWithPhotoAssets/ad11.webp";
-import adImg12 from "../components/AdWithPhoto/AdWithPhotoAssets/ad12.webp";
-import adImg13 from "../components/AdWithPhoto/AdWithPhotoAssets/ad13.webp";
+import adImg6 from "../../public/Images/AdWithPhotoAssets/ad6.webp"
+import adImg7 from "../../public/Images/AdWithPhotoAssets/ad7.webp";
+import adImg8 from "../../public/Images/AdWithPhotoAssets/ad8.webp";
+import adImg9 from "../../public/Images/AdWithPhotoAssets/ad9.webp";
+import adImg10 from "../../public/Images/AdWithPhotoAssets/ad10.webp";
+import adImg11 from "../../public/Images/AdWithPhotoAssets/ad11.webp";
+import adImg12 from "../../public/Images/AdWithPhotoAssets/ad12.webp";
+import adImg13 from "../../public/Images/AdWithPhotoAssets/ad13.webp";
 
 export const adWithPhotoData2 = [
   {

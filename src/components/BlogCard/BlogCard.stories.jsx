@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom"; // for <Link>
 import BlogCard from "./BlogCard";
-import blog1 from "./BlogCardAssets/blog1.webp";
-import authorImg from "../AskQuesTestimonial/AskQuesTestimonialAssets/1.webp";
+import blog1 from "../../../public/Images/BlogCardAssets/blog1.webp";
+import authorImg from "../../../public/Images/AskQuesTestimonialAssets/1.webp";
 
 export default {
   title: "Components/BlogCard",

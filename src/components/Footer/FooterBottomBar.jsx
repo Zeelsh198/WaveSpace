@@ -12,7 +12,7 @@
 import NavLinkItems from "../Navbar/NavLinkItems";
 import ArrowOutwardSharpIcon from "@mui/icons-material/ArrowOutwardSharp";
 import { Avatar, AvatarGroup } from "@mui/material";
-import avtrImg from "../AvatarFounders/FoundersAssets/67877f9495e27059b10a6435_ef5fd2a467fb1a0143aaf268d7342b19_ceo image.webp";
+import avtrImg from "../../../public/Images/FoundersAssets/67877f9495e27059b10a6435_ef5fd2a467fb1a0143aaf268d7342b19_ceo image.webp";
 
 const FooterBottomBar = () => {
   const footerLinks = [

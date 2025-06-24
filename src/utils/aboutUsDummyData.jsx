@@ -1,9 +1,9 @@
-import teamImage1 from "../components/ContentImageBlock/ContentImageBlockAssets/teamImage1.webp";
-import teamImage2 from "../components/ContentImageBlock/ContentImageBlockAssets/teamImage2.webp";
-import teamImage3 from "../components/ContentImageBlock/ContentImageBlockAssets/teamImage3.webp";
-import logo1 from "../components/TrustedBy/companyAssets/logo1.webp";
-import logo2 from "../components/TrustedBy/companyAssets/logo2.webp";
-import logo3 from "../components/TrustedBy/companyAssets/logo3.webp";
+import teamImage1 from "../../public/Images/ContentImageBlockAssets/teamImage1.webp";
+import teamImage2 from "../../public/Images/ContentImageBlockAssets/teamImage2.webp";
+import teamImage3 from "../../public/Images/ContentImageBlockAssets/teamImage3.webp";
+import logo1 from "../../public/Images/companyAssets/logo1.webp";
+import logo2 from "../../public/Images/companyAssets/logo2.webp";
+import logo3 from "../../public/Images/companyAssets/logo3.webp";
 
 export const contentImageBlocks = [
   {

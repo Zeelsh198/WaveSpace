@@ -12,7 +12,7 @@
 
 import FooterIntro from "./FooterIntro";
 import FooterLinksColumn from "./FooterLinksColumn";
-import footerimg from "./FooterAssets/footer.webp";
+import footerimg from "../../../public/Images/FooterAssets/footer.webp";
 import FooterBottomBar from "./FooterBottomBar";
 import ContactForm from "../../Form/ContactForm";
 import HaveAProject from "../HaveAProject/HaveAProject";

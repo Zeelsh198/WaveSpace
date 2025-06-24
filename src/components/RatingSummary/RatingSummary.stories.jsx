@@ -1,8 +1,8 @@
 import RatingSummary from "./RatingSummary";
 import "../../App"; // If this includes Tailwind or global styles
-import Clutch from "./RatingSummaryAssets/clutch.webp";
-import fiverrpro from "./RatingSummaryAssets/fiverrpro.webp";
-import upwork from "./RatingSummaryAssets/upwork.webp";
+import Clutch from "../../../public/Images/RatingSummaryAssets/clutch.webp";
+import fiverrpro from "../../../public/Images/RatingSummaryAssets/fiverrpro.webp";
+import upwork from "../../../public/Images/RatingSummaryAssets/upwork.webp";
 
 export default {
   title: "Components/RatingSummary",

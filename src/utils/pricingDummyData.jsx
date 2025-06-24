@@ -1,19 +1,19 @@
 import EuroIcon from '@mui/icons-material/Euro';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
-import benefitsVideo1 from "../components/BenefitsCard/BenefitsCardAssets/bAd1.mp4";
-import benefitsVideo2 from "../components/BenefitsCard/BenefitsCardAssets/bAd2.mp4";
-import benefitsVideo3 from "../components/BenefitsCard/BenefitsCardAssets/bAd3.mp4";
-import benefitsVideo4 from "../components/BenefitsCard/BenefitsCardAssets/bAd4.mp4";
-import benefitsVideo5 from "../components/BenefitsCard/BenefitsCardAssets/bAd5.mp4";
-import benefitImage1 from "../components/BenefitsCard/BenefitsCardAssets/benefitImage1.webp";
-import benefitImage2 from "../components/TestimonialHighlightCard/TestimonialHighlightCardAssets/679b3952bb097c70167c5b01_452500e36ed7da4a9f80de5e410345cf_image-2 (2).webp";
-import t1 from "../components/TrustedBy/companyAssets/t1.webp";
-import t2 from "../components/TrustedBy/companyAssets/t2.webp";
-import t3 from "../components/TrustedBy/companyAssets/t3.webp";
-import t4 from "../components/TrustedBy/companyAssets/t4.webp";
-import t5 from "../components/TrustedBy/companyAssets/t5.webp";
-import t6 from "../components/TrustedBy/companyAssets/t6.webp";
-import t7 from "../components/TrustedBy/companyAssets/t7.webp";
+import benefitsVideo1 from "../../public/Videos/BenefitsCardAssets/bAd1.mp4";
+import benefitsVideo2 from "../../public/Videos/BenefitsCardAssets/bAd2.mp4";
+import benefitsVideo3 from "../../public/Videos/BenefitsCardAssets/bAd3.mp4";
+import benefitsVideo4 from "../../public/Videos/BenefitsCardAssets/bAd4.mp4";
+import benefitsVideo5 from "../../public/Videos/BenefitsCardAssets/bAd5.mp4";
+import benefitImage1 from "../../public/Videos/BenefitsCardAssets/benefitImage1.webp";
+import benefitImage2 from "../../public/Images/TestimonialHighlightCardAssets/679b3952bb097c70167c5b01_452500e36ed7da4a9f80de5e410345cf_image-2 (2).webp";
+import t1 from "../../public/Images/companyAssets/t1.webp";
+import t2 from "../../public/Images/companyAssets/t2.webp";
+import t3 from "../../public/Images/companyAssets/t3.webp";
+import t4 from "../../public/Images/companyAssets/t4.webp";
+import t5 from "../../public/Images/companyAssets/t5.webp";
+import t6 from "../../public/Images/companyAssets/t6.webp";
+import t7 from "../../public/Images/companyAssets/t7.webp";
 
 export const pricingPlans = [
   { label: "Monthly" },

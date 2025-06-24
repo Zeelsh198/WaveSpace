@@ -1,6 +1,6 @@
 import AdWithPhoto from "./AdWithPhoto";
 import "../../App"; // Tailwind or global styles
-import adImg1 from "./AdWithPhotoAssets/ad1.webp";
+import adImg1 from "../../public/Images/AdWithPhotoAssets/ad1.webp";
 
 export default {
   title: "Components/AdWithPhoto",

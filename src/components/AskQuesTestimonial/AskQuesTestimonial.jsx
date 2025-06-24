@@ -25,7 +25,7 @@
 
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
-import img1 from "./AskQuesTestimonialAssets/1.webp";
+import img1 from "../../../public/Images/AskQuesTestimonialAssets/1.webp";
 
 const AskQuesTestimonial = ({
   img = img1,

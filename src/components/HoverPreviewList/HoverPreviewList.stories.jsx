@@ -1,7 +1,7 @@
 import React from "react";
 import HoverPreviewList from "./HoverPreviewList";
 import "../../App.css"; // Ensure global Tailwind is imported here
-import adImg12 from "../AdWithPhoto/AdWithPhotoAssets/ad12.webp";
+import adImg12 from "../../public/Images/AdWithPhotoAssets/ad12.webp";
 
 export default {
   title: "Components/HoverPreviewList",

@@ -1,6 +1,6 @@
 import React from 'react';
 import BenefitsCard from './BenefitsCard';
-import vd1 from "./BenefitsCardAssets/bAd1.mp4"
+import vd1 from "../../../public/Videos/BenefitsCardAssets/bAd1.mp4"
 export default {
   title: 'Components/BenefitsCard',
   component: BenefitsCard,

@@ -1,7 +1,7 @@
 // src/components/HoverCardDetails/HoverCardDetails.stories.jsx
 import React from "react";
 import HoverCardDetails from "./HoverCardDetails";
-import ad1 from "./HoverCardDetailsAssets/h1.webp"
+import ad1 from "../../../public/Images/HoverCardDetailsAssets/h1.webp"
 export default {
     title: "Components/HoverCardDetails",
     component: HoverCardDetails,

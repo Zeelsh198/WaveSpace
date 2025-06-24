@@ -1,5 +1,5 @@
 import { Avatar } from "@mui/material";
-import bookCallImg from "../AvatarFounders/FoundersAssets/67877f9495e27059b10a6435_ef5fd2a467fb1a0143aaf268d7342b19_ceo image.webp";
+import bookCallImg from "../../../public/Images/FoundersAssets/67877f9495e27059b10a6435_ef5fd2a467fb1a0143aaf268d7342b19_ceo image.webp";
 
 const BookCallButton = ({
   label = "Book a free call",

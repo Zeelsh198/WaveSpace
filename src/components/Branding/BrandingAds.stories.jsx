@@ -1,6 +1,6 @@
 import BrandingAds from "./BrandingAds";
 import "../../App"; // If this includes Tailwind or global styles
-import brandingImg1 from "./BrandingAdsAssets/ad1.webp";
+import brandingImg1 from "../../../public/Images/BrandingAdsAssets/ad1.webp"
 
 export default {
   title: "Components/BrandingAds",

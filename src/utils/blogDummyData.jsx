@@ -1,14 +1,14 @@
-import blog1 from "../components/BlogCard/BlogCardAssets/blog1.webp";
-import blog2 from "../components/BlogCard/BlogCardAssets/blog2.webp";
-import blog3 from "../components/BlogCard/BlogCardAssets/blog3.webp";
-import blog4 from "../components/BlogCard/BlogCardAssets/blog4.webp";
-import blog5 from "../components/BlogCard/BlogCardAssets/blog5.webp";
-import blog6 from "../components/BlogCard/BlogCardAssets/blog6.webp";
-import blog7 from "../components/BlogCard/BlogCardAssets/blog7.webp";
-import blog8 from "../components/BlogCard/BlogCardAssets/blog8.webp";
-import blog9 from "../components/BlogCard/BlogCardAssets/blog9.webp";
+import blog1 from "../../public/Images/BlogCardAssets/blog1.webp";
+import blog3 from "../../public/Images/BlogCardAssets/blog3.webp";
+import blog2 from "../../public/Images/BlogCardAssets/blog2.webp";
+import blog4 from "../../public/Images/BlogCardAssets/blog4.webp";
+import blog5 from "../../public/Images/BlogCardAssets/blog5.webp";
+import blog6 from "../../public/Images/BlogCardAssets/blog6.webp";
+import blog7 from "../../public/Images/BlogCardAssets/blog7.webp";
+import blog9 from "../../public/Images/BlogCardAssets/blog9.webp";
+import blog8 from "../../public/Images/BlogCardAssets/blog8.webp";
 
-import blog1Author from "../components/AskQuesTestimonial/AskQuesTestimonialAssets/1.webp";
+import blog1Author from "../../public/Images/AskQuesTestimonialAssets/1.webp";
 
 
 export const blogNavLinks = [

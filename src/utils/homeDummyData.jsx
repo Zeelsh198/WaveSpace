@@ -1,22 +1,22 @@
-import TestimonialImg1 from "../components/TestiMonialCard/TestiMonialAssets/67877f9495e27059b10a6422_96f7f37762eb6a222ca8aafae632defd_review image-1-p-500.webp";
-import TestimonialImg2 from "../components/TestiMonialCard/TestiMonialAssets/67877f9495e27059b10a6430_b60b4273447225993e1fe6f4b9fb8c20_review image-p-800.webp";
-import TestimonialImg3 from "../components/TestiMonialCard/TestiMonialAssets/6795bfcf60dbd390d6edee04_1ef034f4c36b38ceee42be8e99eee2b8_review image (1)-p-500.webp";
-import adImg1 from "../components/AdWithPhoto/AdWithPhotoAssets/ad1.webp";
-import adImg2 from "../components/AdWithPhoto/AdWithPhotoAssets/ad2.webp";
-import adImg3 from "../components/AdWithPhoto/AdWithPhotoAssets/ad3.webp";
-import adImg4 from "../components/AdWithPhoto/AdWithPhotoAssets/ad4.webp";
-import adImg5 from "../components/AdWithPhoto/AdWithPhotoAssets/ad5.webp";
-import brandingImg1 from "../components/Branding/BrandingAdsAssets/ad1.webp";
-import brandingImg2 from "../components/Branding/BrandingAdsAssets/ad2.webp";
-import brandingImg3 from "../components/Branding/BrandingAdsAssets/ad3.webp";
-import brandingImg4 from "../components/Branding/BrandingAdsAssets/ad4.webp";
-import brandingImg5 from "../components/Branding/BrandingAdsAssets/ad5.webp";
-import logo1 from "../components/TrustedBy/companyAssets/logo1.webp";
-import logo2 from "../components/TrustedBy/companyAssets/logo2.webp";
-import logo3 from "../components/TrustedBy/companyAssets/logo3.webp";
-import s1 from "../components/TrustedBy/companyAssets/s1.webp";
-import s2 from "../components/TrustedBy/companyAssets/s2.webp";
-import s3 from "../components/TrustedBy/companyAssets/s3.webp";
+import TestimonialImg1 from "../../public/Images/TestiMonialAssets/67877f9495e27059b10a6422_96f7f37762eb6a222ca8aafae632defd_review image-1-p-500.webp";
+import TestimonialImg2 from "../../public/Images/TestiMonialAssets/67877f9495e27059b10a6430_b60b4273447225993e1fe6f4b9fb8c20_review image-p-800.webp";
+import TestimonialImg3 from "../../public/Images/TestiMonialAssets/6795bfcf60dbd390d6edee04_1ef034f4c36b38ceee42be8e99eee2b8_review image (1)-p-500.webp";
+import adImg1 from "../../public/Images/AdWithPhotoAssets/ad1.webp";
+import adImg2 from "../../public/Images/AdWithPhotoAssets/ad2.webp";
+import adImg3 from "../../public/Images/AdWithPhotoAssets/ad3.webp";
+import adImg4 from "../../public/Images/AdWithPhotoAssets/ad4.webp";
+import adImg5 from "../../public/Images/AdWithPhotoAssets/ad5.webp";
+import brandingImg1 from "../../public/Images/BrandingAdsAssets/ad1.webp";
+import brandingImg2 from "../../public/Images/BrandingAdsAssets/ad2.webp";
+import brandingImg3 from "../../public/Images/BrandingAdsAssets/ad3.webp";
+import brandingImg4 from "../../public/Images/BrandingAdsAssets/ad4.webp";
+import brandingImg5 from "../../public/Images/BrandingAdsAssets/ad5.webp";
+import logo1 from "../../public/Images/companyAssets/logo1.webp";
+import logo2 from "../../public/Images/companyAssets/logo2.webp";
+import logo3 from "../../public/Images/companyAssets/logo3.webp";
+import s1 from "../../public/Images/companyAssets/s1.webp";
+import s2 from "../../public/Images/companyAssets/s2.webp";
+import s3 from "../../public/Images/companyAssets/s3.webp";
 
 export const steps = [
   "Onboard in <1 day",

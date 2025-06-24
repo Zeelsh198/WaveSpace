@@ -1,6 +1,6 @@
 import React from "react";
 import TextBox from "../../components/TextBox/TextBox";
-import aboutUs from "./AboutUsAssets/aboutus.webp";
+import aboutUs from "../../../public/Images/AboutUsAssets/aboutus.webp"
 import ScrollColorShiftText from "../../components/ScrollColorShiftText/ScrollColorShiftText";
 import ImageMarquee from "../../components/TrustedBy/ImageMarquee";
 import ButtonArrow from "../../components/Button/ButtonArrow";

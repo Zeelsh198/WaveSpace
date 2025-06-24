@@ -1,7 +1,8 @@
 // src/components/ContentImageBlock/ContentImageBlock.stories.jsx
 
 import React from "react";
-import image from "./ContentImageBlockAssets/teamImage1.webp"
+
+import image from "../../../public/Images/ContentImageBlockAssets/teamImage1.webp";
 import ContentImageBlock from "./ContentImageBlock";
 
 export default {

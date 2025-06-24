@@ -20,9 +20,10 @@
 import { useEffect, useRef, useState } from "react";
 import FeedbackCard from "../FeedBackCard/FeedBackCard";
 import RatingSummary from "../RatingSummary/RatingSummary";
-import f1 from "../FeedBackCard/FeedBackCardAssets/f1.webp";
-import f2 from "../FeedBackCard/FeedBackCardAssets/f2.webp";
-import f3 from "../FeedBackCard/FeedBackCardAssets/f3.webp";
+
+import f1 from "../../../public/Images/FeedBackCardAssets/f1.webp";
+import f2 from "../../../public/Images/FeedBackCardAssets/f2.webp";
+import f3 from "../../../public/Images/FeedBackCardAssets/f3.webp";
 
 const feedbackData = [
   {
