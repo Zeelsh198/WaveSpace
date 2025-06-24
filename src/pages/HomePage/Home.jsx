@@ -5,7 +5,7 @@ import ReviewBadge from "../../components/ReviewBadge/ReviewBadge";
 import AvatarFounders from "../../components/AvatarFounders/AvatarFounders";
 import BgVideo from "../../components/bgVideo/BgVideo";
 import ScrollColorShiftText from "../../components/ScrollColorShiftText/ScrollColorShiftText";
-import TestimonialCard from "../../components/TestiMonialCard/TestiMonialCard.Jsx";
+import TestiMonialCardfrom "../../components/TestiMonialCard/TestiMonialCard.Jsx";
 import TestimonialHighlightCard from "../../components/TestimonialHighlightCard/TestimonialHighlightCard";
 import AdWithPhoto from "../../components/AdWithPhoto/AdWithPhoto";
 import ButtonArrow from "../../components/Button/ButtonArrow";
@@ -133,7 +133,7 @@ const Home = () => {
         <div className="w-full ">
           <div className="max-w-[1440px] mx-auto flex flex-wrap justify-center gap-20 ">
             {testimonialCards.map((card, index) => (
-              <TestimonialCard key={index} {...card} />
+              <TestiMonialCardkey={index} {...card} />
             ))}
           </div>
         </div>

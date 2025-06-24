@@ -28,7 +28,7 @@
 
 import React from "react";
 
-const TestimonialCard = ({
+const TestiMonialCard= ({
   image,
   name,
   position,
@@ -61,4 +61,4 @@ const TestimonialCard = ({
   );
 };
 
-export default TestimonialCard;
+export default TestiMonialCard;
