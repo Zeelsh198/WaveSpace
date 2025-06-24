@@ -1,6 +1,6 @@
 import "../../App"; // If this includes Tailwind or global styles
 import image from "../../../public/Images/TestiMonialAssets/67877f9495e27059b10a6422_96f7f37762eb6a222ca8aafae632defd_review image-1-p-500.webp";
-import TestiMonialCardfrom "./TestiMonialCard.Jsx";
+import TestimonialCard from "./TestiMonialCard.Jsx";
 
 export default {
   title: "Components/TestimonialCard",
@@ -16,7 +16,7 @@ export default {
   },
 };
 
-const Template = (args) => <TestiMonialCard{...args} />;
+const Template = (args) => <TestimonialCard {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

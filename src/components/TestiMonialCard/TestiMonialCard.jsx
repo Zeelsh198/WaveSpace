@@ -28,7 +28,7 @@
 
 import React from "react";
 
-const TestiMonialCard= ({
+const TestiMonialCard = ({
   image,
   name,
   position,
